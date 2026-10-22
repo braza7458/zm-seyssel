@@ -28,7 +28,9 @@ $files = @("map_source\zm\$Map.map")
 foreach ($d in $dirs) {
     $src, $dst = if ($Vers -eq "Jeu") { (Join-Path $repo $d), (Join-Path $Bo3 $d) } else { (Join-Path $Bo3 $d), (Join-Path $repo $d) }
     if (Test-Path $src) {
-        robocopy $src $dst /E /XF *.ff *.xpak *.d3dbsp *.bak /NJH /NJS /NDL /NP | Out-Host
+        # Les sous-dossiers de zone_source (all, loc, english, french...) sont generes par le linker
+        $generes = Get-ChildItem (Join-Path $src "zone_source") -Directory -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }
+        robocopy $src $dst /E /XF *.ff *.xpak *.d3dbsp *.bak /XD @generes /NJH /NJS /NDL /NP | Out-Host
     }
 }
 

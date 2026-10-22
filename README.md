@@ -78,7 +78,9 @@ python tools/build_map.py        # (re)génère zm_seyssel.map et le prefab du q
 .\tools\compile.ps1 -Etapes Jouer   # relancer sans recompiler
 ```
 
-Deux pièges réglés par `compile.ps1`, à connaître si tu passes par le Launcher :
+Pièges réglés par `compile.ps1`, à connaître si tu passes par le Launcher :
+
+- **Langue du jeu.** Un BO3 en français charge `fr_zm_seyssel.ff`. Si la map est liée en anglais, le jeu s'arrête avec `Could not find zone 'fr_zm_seyssel'`. Le script détecte la langue du jeu installé ; dans le Launcher, règle « Build Language » sur la langue de ton jeu.
 
 - **Mod Tools dans un dossier à part.** Steam les a mis dans `Call of Duty Black Ops III 455130`, à côté du jeu. Le bouton « Run » du Launcher cherche `BlackOps3.exe` dans ce dossier et ne le trouve pas. Le script lance le jeu depuis son vrai dossier, où un lien `usermaps` pointe vers celui des Mod Tools.
 - **Windows en français.** L'outil `gdtdb` lit les décimaux à la française (« 0,5 ») et plante sur les fichiers BO3 (« 0.5 »). Le script le lance en anglais, sans rien changer à Windows.

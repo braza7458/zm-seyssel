@@ -20,6 +20,10 @@ if (Test-Path (Join-Path $Bo3 "bin\radiant_modtools.exe")) {
 
 # 2. Commit s'il y a quelque chose de nouveau
 git add -A 2>$null
+if ($LASTEXITCODE -ne 0) {
+    Write-Output "{`"systemMessage`": `"Sauvegarde GitHub impossible : git add a echoue (lance 'git add -A' pour voir pourquoi).`"}"
+    exit 0
+}
 git diff --cached --quiet
 if ($LASTEXITCODE -ne 0) {
     $date = Get-Date -Format "yyyy-MM-dd HH:mm"

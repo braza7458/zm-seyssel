@@ -1,6 +1,8 @@
 # Fichiers compiles par le Launcher BO3
 game/usermaps/*/zone/*
 !game/usermaps/*/zone/*.png
+# Fichiers generes par le linker dans zone_source (all, loc, english, french...)
+game/usermaps/*/zone_source/*/
 *.ff
 *.xpak
 *.d3dbsp

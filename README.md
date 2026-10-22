@@ -82,6 +82,7 @@ Deux pièges réglés par `compile.ps1`, à connaître si tu passes par le Launc
 
 - **Mod Tools dans un dossier à part.** Steam les a mis dans `Call of Duty Black Ops III 455130`, à côté du jeu. Le bouton « Run » du Launcher cherche `BlackOps3.exe` dans ce dossier et ne le trouve pas. Le script lance le jeu depuis son vrai dossier, où un lien `usermaps` pointe vers celui des Mod Tools.
 - **Windows en français.** L'outil `gdtdb` lit les décimaux à la française (« 0,5 ») et plante sur les fichiers BO3 (« 0.5 »). Le script le lance en anglais, sans rien changer à Windows.
+  Le compilateur de sons intégré au linker a le même défaut, et là aucun contournement n'est possible : tant que le symbole décimal de Windows est la virgule, le link signale `unable to load file 'sound/zone//zm_seyssel.all.alias.sz'`. La map compile et se lance quand même, mais sans sons personnalisés. Correctif : `Win + R` → `intl.cpl` → **Paramètres supplémentaires** → **Symbole décimal** = `.` (et **Symbole de groupement des chiffres** = espace).
 
 ## Échelle
 

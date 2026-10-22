@@ -65,6 +65,8 @@ git commit -m "HLM : façade est"
 git push
 ```
 
+Avec Claude Code, ces étapes sont automatiques : à la fin de chaque réponse, `tools/fin-de-session.ps1` récupère la map depuis le jeu, puis fait le commit et le push s'il y a des changements. On peut aussi le lancer à la main.
+
 Le chemin du jeu par défaut est `D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III` ; sinon passe `-Bo3 "<chemin>"`.
 
 ## Échelle

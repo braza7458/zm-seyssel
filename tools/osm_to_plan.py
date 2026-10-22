@@ -39,7 +39,8 @@ def to_local_m(lat, lon, lat0, lon0):
     return x, y
 
 
-def main(src):
+def load_site(src):
+    """Renvoie (ways, project) : les ways OSM par id et la projection en unites BO3."""
     data = json.loads(Path(src).read_text(encoding="utf-8"))
     ways = {e["id"]: e for e in data["elements"] if e["type"] == "way"}
     ref = ways[REF_WAY]["geometry"]
@@ -71,6 +72,13 @@ def main(src):
     def project(n):
         x, y = rotate(n)
         return x - ox, y - oy
+
+    project.rotation_deg = math.degrees(rot)
+    return ways, project
+
+
+def main(src):
+    ways, project = load_site(src)
 
     shapes = []
     for wid, w in ways.items():
@@ -165,7 +173,7 @@ def main(src):
             lines.append(f"| {i} | {round(x / 8) * 8} | {round(y / 8) * 8} |")
         lines.append("")
     (plans / "coordonnees-radiant.md").write_text("\n".join(lines), encoding="utf-8")
-    print("Rotation appliquee :", round(math.degrees(rot), 1), "degres")
+    print("Rotation appliquee :", round(project.rotation_deg, 1), "degres")
 
 
 if __name__ == "__main__":

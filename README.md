@@ -3,13 +3,13 @@
 Map custom pour le mode Zombies de **Call of Duty: Black Ops III**, qui recrée la ville de **Seyssel (Haute-Savoie)**.
 On commence par le quartier des **Prés Dombet** et son HLM, qui sert de zone de départ.
 
-![Plan du site](docs/plans/site-pres-dombet.svg)
+![Aperçu du blockout](docs/plans/apercu-blockout.svg)
 
 ## Avancement
 
 | # | Zone | État |
 |---|---|---|
-| 01 | [HLM des Prés Dombet](docs/batiments/01-hlm-pres-dombet.md) | Relevé fait — blockout à faire |
+| 01 | [HLM des Prés Dombet](docs/batiments/01-hlm-pres-dombet.md) | Relevé fait, prefab de blockout généré — à tester dans Radiant |
 | 02 | Annexe à toit plat + parking | À faire |
 | 03 | Avenue Borcier (peupliers) | À faire |
 | 04 | École maternelle | À faire |
@@ -26,17 +26,28 @@ On commence par le quartier des **Prés Dombet** et son HLM, qui sert de zone de
 ```
 game/                       copie des sources de la map, même arborescence que le dossier du jeu
   map_source/zm/zm_seyssel.map
-  map_source/_prefabs/zm_seyssel/
+  map_source/_prefabs/zm_seyssel/site_blockout.map   blockout du quartier, prêt à importer
   usermaps/zm_seyssel/      scripts, zone_source, sons
 docs/
   batiments/                une fiche par bâtiment (photos décrites, dimensions, ordre de construction)
-  plans/                    plan de dessus et coordonnées en unités Radiant
+  gameplay/                 parcours, portes, atouts, Mystery Box par zone
+  plans/                    plan de dessus, aperçu 3D et coordonnées en unités Radiant
 reference/osm/              données OpenStreetMap du quartier
 reference/photos/           tes photos perso (non publiées sur GitHub)
 tools/
   sync.ps1                  copie dépôt <-> dossier du jeu
-  osm_to_plan.py            regénère les plans à partir des données OSM
+  osm_to_plan.py            regénère le plan de dessus et les coordonnées
+  make_blockout.py          regénère le prefab de blockout
+  preview_blockout.py       regénère l'aperçu 3D à partir d'un .map
 ```
+
+## Importer le blockout dans Radiant
+
+1. `.\tools\sync.ps1 -Vers Jeu` pour copier le prefab dans le dossier du jeu.
+2. Dans Radiant, ouvrir `zm_seyssel`, clic droit dans la vue 2D > **Misc > Prefab...**, choisir `_prefabs/zm_seyssel/site_blockout.map`.
+3. Placer le prefab en (0, 0, 0). Le HLM est centré sur l'origine, le sol est à z = 0.
+
+Le prefab contient le sol, les routes, le HLM (5 niveaux de 128, toit à deux pans, cheminées), l'annexe et les bâtiments voisins en volumes simples.
 
 ## Travailler sur la map
 

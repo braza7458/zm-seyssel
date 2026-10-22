@@ -38,7 +38,7 @@ Les coordonnées exactes de chaque coin sont dans [../plans/coordonnees-radiant.
 
 ## Ordre de construction dans Radiant
 
-1. **Blockout (greybox)** : un brush de 2384 × 496 × 640 centré sur (0,0), avec la texture `caulk`. Vérifier en jeu que l'échelle « sonne juste ».
+1. **Blockout (greybox)** : déjà généré dans le prefab `_prefabs/zm_seyssel/site_blockout.map` (volume 2384 × 496 × 640, toit, cheminées, annexe, voisins). L'importer, compiler et vérifier en jeu que l'échelle « sonne juste ».
 2. **Sol et terrain** : pelouse derrière, parking devant, l'annexe à toit plat.
 3. **Coque** : murs extérieurs creusés, dalles d'étage tous les 128, cage d'escalier.
 4. **Toit** : deux pans + cheminées.

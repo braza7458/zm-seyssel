@@ -1,5 +1,22 @@
 # Gameplay — zone 1 : le HLM des Prés Dombet
 
+## Version jouable actuelle (v0.1, générée par `tools/build_map.py`)
+
+Le contenu de la salle de test officielle est posé sur le **parking, à l'est du HLM**. Le HLM reste un bloc plein pour l'instant.
+
+| Élément | Position (unités) |
+|---|---|
+| Spawn des joueurs | autour de (1300, -900), face au HLM |
+| Quick Revive, Juggernog, Speed Cola, Double Tap | alignés vers x ≈ 465, entre y -484 et -100 |
+| Mystery Box | (471, -1286) |
+| Pack-a-Punch | (705, 36) |
+| Interrupteur du courant | (860, 53) |
+| Fusil à pompe au mur | (869, -1346) |
+| Zombies (sortent du sol) | (708, -324), (708, -1476), (324, -900) au pied du HLM |
+| Zone de départ | tout le quartier entre x -1400 et 2600 |
+
+## Plan cible
+
 Proposition de départ, à ajuster en jouant. Les prix suivent ceux des maps officielles de BO3.
 
 ## Parcours du joueur

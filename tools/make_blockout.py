@@ -22,13 +22,15 @@ from osm_to_plan import REF_WAY, ROOT, load_site
 
 OUT = ROOT / "game" / "map_source" / "_prefabs" / "zm_seyssel" / "site_blockout.map"
 
-# Materiaux : provisoires tant que la liste des materiaux BO3 n'est pas verifiee
+# Materiaux BO3 releves dans les sources des maps officielles (map_source des Mod Tools)
 MAT = {
-    "sol": "caulk",
-    "route": "caulk",
-    "mur": "caulk",
-    "toit": "caulk",
-    "voisin": "caulk",
+    "sol": "t7_stone_pebbles_01",
+    "route": "t7_asphalt_dirty_dark_desert",
+    "mur": "t7_plaster_smooth_light_01",
+    "toit": "t7_brick_worn_dirty_red_wet",
+    "cheminee": "t7_brick_worn_heavy_grout_red",
+    "annexe": "t7_concrete_poured_bunker_paint_01_grey_lt",
+    "voisin": "t7_concrete_wall_weathered_01_wet",
 }
 
 ETAGE = 128
@@ -181,21 +183,37 @@ def fmt(v):
     return f"{round(v, 3):g}"
 
 
-def write_map(brushes, path):
-    lines = [
-        "iwmap 4",
-        "// entity 0",
-        "{",
-        f'guid "{{{str(uuid.uuid4()).upper()}}}"',
-        '"classname" "worldspawn"',
-    ]
-    for i, (mat, planes) in enumerate(brushes):
-        lines += [f"// brush {i}", "{", f' guid "{{{str(uuid.uuid4()).upper()}}}"']
+_guids = {"graine": "", "n": 0}
+
+
+def reset_guids(graine):
+    """Identifiants stables : la meme generation redonne les memes GUID (eclairage et diffs git)."""
+    _guids.update(graine=graine, n=0)
+
+
+def new_guid():
+    _guids["n"] += 1
+    return f'{{{str(uuid.uuid5(uuid.NAMESPACE_URL, f"zm_seyssel/{_guids["graine"]}/{_guids["n"]}")).upper()}}}'
+
+
+def brush_lines(brushes, first=0):
+    """Lignes .map des brushes ; chaque brush est (categorie de MAT ou nom de materiau, plans)."""
+    lines = []
+    for i, (cat, planes) in enumerate(brushes, first):
+        mat = MAT.get(cat, cat)
+        lines += [f"// brush {i}", "{", f" guid \"{new_guid()}\""]
         for n, p in planes:
             p1, p2, p3 = plane_points(n, p)
             pts = " ".join("( " + " ".join(fmt(c) for c in q) + " )" for q in (p1, p2, p3))
-            lines.append(f" {pts} {mat} 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0")
+            lines.append(f" {pts} {mat} 256 256 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0")
         lines.append("}")
+    return lines
+
+
+def write_map(brushes, path):
+    reset_guids(path.name)
+    lines = ["iwmap 4", "// entity 0", "{", f'guid "{new_guid()}"', '"classname" "worldspawn"']
+    lines += brush_lines(brushes)
     lines.append("}")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines) + "\n", encoding="ascii", newline="\r\n")
@@ -218,12 +236,13 @@ def check_brush(planes):
     return all(sum(1 for v in verts if abs(dot(n, v) - d) < 0.01) >= 3 for n, d in planes)
 
 
-def main():
+def build_site():
+    """Brushes du quartier : liste de (categorie, plans), la categorie donne le materiau via MAT."""
     ways, project = load_site(ROOT / "reference" / "osm" / "site_pres_dombet.json")
     brushes = []
 
     # Sol
-    brushes.append((MAT["sol"], box(-RAYON, -RAYON, -16, RAYON, RAYON, 0)))
+    brushes.append(("sol", box(-RAYON, -RAYON, -16, RAYON, RAYON, 0)))
 
     # Routes : bandes de 2 unites d'epaisseur posees sur le sol
     for w in ways.values():
@@ -236,23 +255,23 @@ def main():
         width = 240 if hw in ("secondary", "tertiary", "residential") else 120 if hw == "service" else 60
         for quad in road_quads(line, width):
             if all(abs(c) < RAYON for p in quad for c in p):
-                brushes.append((MAT["route"], prism(quad, 0, 2)))
+                brushes.append(("route", prism(quad, 0, 2)))
 
     # HLM : volumes droits + toit + cheminees
     hlm = [project(n) for n in ways[REF_WAY]["geometry"]][:-1]
     rects = rectangles(hlm)
     for x0, y0, x1, y1 in rects:
-        brushes.append((MAT["mur"], box(x0, y0, 0, x1, y1, ETAGE * NIVEAUX)))
+        brushes.append(("mur", box(x0, y0, 0, x1, y1, ETAGE * NIVEAUX)))
     bx0 = min(r[0] for r in rects) - DEBORD_TOIT
     bx1 = max(r[2] for r in rects) + DEBORD_TOIT
     by0 = min(r[1] for r in rects) - DEBORD_TOIT
     by1 = max(r[3] for r in rects) + DEBORD_TOIT
     toit, z_faitage = roof(bx0, by0, bx1, by1, ETAGE * NIVEAUX)
-    brushes.append((MAT["toit"], toit))
+    brushes.append(("toit", toit))
     xm = (bx0 + bx1) / 2
     for i in range(10):
         y = by0 + (by1 - by0) * (i + 0.5) / 10
-        brushes.append((MAT["mur"], box(xm - 24, y - 16, z_faitage - 32, xm + 24, y + 16, z_faitage + 64)))
+        brushes.append(("cheminee", box(xm - 24, y - 16, z_faitage - 32, xm + 24, y + 16, z_faitage + 64)))
 
     # Voisins
     for wid, w in ways.items():
@@ -263,18 +282,23 @@ def main():
         if not all(abs(x) < RAYON and abs(y) < RAYON for x, y in poly):
             continue
         h = 128 if wid == ANNEXE else HAUTEURS.get(tags["building"], 256)
-        mat = MAT["mur"] if wid == ANNEXE else MAT["voisin"]
+        cat = "annexe" if wid == ANNEXE else "voisin"
         if is_orthogonal(poly):
             for x0, y0, x1, y1 in rectangles(poly[:-1]):
-                brushes.append((mat, box(x0, y0, 0, x1, y1, h)))
+                brushes.append((cat, box(x0, y0, 0, x1, y1, h)))
             continue
         hull = convex_hull(poly)
         if len(hull) >= 3:
-            brushes.append((mat, prism(hull, 0, h)))
+            brushes.append((cat, prism(hull, 0, h)))
 
     bad = [i for i, (_, planes) in enumerate(brushes) if not check_brush(planes)]
     if bad:
         raise SystemExit(f"Brushes invalides : {bad}")
+    return brushes, rects, z_faitage
+
+
+def main():
+    brushes, rects, z_faitage = build_site()
     write_map(brushes, OUT)
     print(f"{len(brushes)} brushes ecrits dans {OUT.relative_to(ROOT)}")
     print(f"HLM : {len(rects)} blocs, egout a z={ETAGE * NIVEAUX}, faitage a z={round(z_faitage)}")

@@ -1,15 +1,16 @@
 <#
-Synchronise les sources de la map entre ce depot et le dossier de BO3.
+Synchronise les sources de la map entre ce depot et le dossier des Mod Tools BO3
+(Steam les a installes a part : "Call of Duty Black Ops III 455130").
 
-    .\tools\sync.ps1 -Vers Jeu      copie le depot vers le jeu (apres un git pull)
-    .\tools\sync.ps1 -Vers Depot    copie le jeu vers le depot (avant un git commit)
+    .\tools\sync.ps1 -Vers Jeu      copie le depot vers les Mod Tools (apres un git pull)
+    .\tools\sync.ps1 -Vers Depot    copie les Mod Tools vers le depot (avant un git commit)
 
 Rien n'est jamais supprime : robocopy /E ajoute et met a jour seulement.
-Les fichiers compiles (usermaps\<map>\zone) ne sont pas copies.
+Les fichiers compiles (.ff, .xpak, .d3dbsp) ne sont pas copies.
 #>
 param(
     [Parameter(Mandatory)][ValidateSet("Jeu", "Depot")][string]$Vers,
-    [string]$Bo3 = "D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III",
+    [string]$Bo3 = "D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III 455130",
     [string]$Map = "zm_seyssel"
 )
 
@@ -27,7 +28,7 @@ $files = @("map_source\zm\$Map.map")
 foreach ($d in $dirs) {
     $src, $dst = if ($Vers -eq "Jeu") { (Join-Path $repo $d), (Join-Path $Bo3 $d) } else { (Join-Path $Bo3 $d), (Join-Path $repo $d) }
     if (Test-Path $src) {
-        robocopy $src $dst /E /XD zone /XF *.ff *.xpak *.bak /NJH /NJS /NDL /NP | Out-Host
+        robocopy $src $dst /E /XF *.ff *.xpak *.d3dbsp *.bak /NJH /NJS /NDL /NP | Out-Host
     }
 }
 
@@ -41,3 +42,4 @@ foreach ($f in $files) {
 }
 
 Write-Host "Synchro terminee ($Vers)."
+exit 0  # robocopy laisse un code 1 quand il a copie des fichiers : ce n'est pas une erreur

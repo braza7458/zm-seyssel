@@ -67,7 +67,21 @@ git push
 
 Avec Claude Code, ces étapes sont automatiques : à la fin de chaque réponse, `tools/fin-de-session.ps1` récupère la map depuis le jeu, puis fait le commit et le push s'il y a des changements. On peut aussi le lancer à la main.
 
-Le chemin du jeu par défaut est `D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III` ; sinon passe `-Bo3 "<chemin>"`.
+Le dossier des Mod Tools par défaut est `D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III 455130` ; sinon passe `-Bo3 "<chemin>"`.
+
+## Fabriquer, compiler et jouer
+
+```powershell
+python tools/build_map.py        # (re)génère zm_seyssel.map et le prefab du quartier depuis le modèle zombies
+.\tools\sync.ps1 -Vers Jeu       # copie vers le dossier des Mod Tools
+.\tools\compile.ps1              # base des assets, BSP + navmesh, éclairage, link, puis lance le jeu
+.\tools\compile.ps1 -Etapes Jouer   # relancer sans recompiler
+```
+
+Deux pièges réglés par `compile.ps1`, à connaître si tu passes par le Launcher :
+
+- **Mod Tools dans un dossier à part.** Steam les a mis dans `Call of Duty Black Ops III 455130`, à côté du jeu. Le bouton « Run » du Launcher cherche `BlackOps3.exe` dans ce dossier et ne le trouve pas. Le script lance le jeu depuis son vrai dossier, où un lien `usermaps` pointe vers celui des Mod Tools.
+- **Windows en français.** L'outil `gdtdb` lit les décimaux à la française (« 0,5 ») et plante sur les fichiers BO3 (« 0.5 »). Le script le lance en anglais, sans rien changer à Windows.
 
 ## Échelle
 

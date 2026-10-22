@@ -7,7 +7,7 @@ et utilisable a la main :
     .\tools\fin-de-session.ps1
 #>
 param(
-    [string]$Bo3 = "D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III"
+    [string]$Bo3 = "D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III 455130"
 )
 
 $root = Split-Path $PSScriptRoot -Parent

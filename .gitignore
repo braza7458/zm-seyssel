@@ -16,3 +16,6 @@ reference/photos/*
 __pycache__/
 Thumbs.db
 desktop.ini
+
+# Reglages Claude Code personnels
+.claude/settings.local.json

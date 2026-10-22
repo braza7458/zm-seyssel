@@ -12,7 +12,7 @@ param(
     [string]$Tools = "D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III 455130",
     [string]$Jeu = "D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III",
     [string]$Map = "zm_seyssel",
-    [ValidateSet("low", "medium", "high")][string]$QualiteLumiere = "low",
+    [ValidateSet("low", "medium", "high")][string]$QualiteLumiere = "medium",
     # Langue du pack localise (fr_zm_seyssel.ff...) : par defaut celle du jeu installe
     [string]$Langue = ""
 )

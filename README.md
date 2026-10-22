@@ -1,19 +1,21 @@
 # zm_seyssel — map zombies Black Ops III
 
 Map custom pour le mode Zombies de **Call of Duty: Black Ops III**, qui recrée la ville de **Seyssel (Haute-Savoie)**.
-On commence par le quartier des **Prés Dombet** et son HLM, qui sert de zone de départ.
+On commence par le quartier des **Prés Dombet** et ses trois immeubles HLM.
 
-![Aperçu du blockout](docs/plans/apercu-blockout.svg)
+![Aperçu du quartier](docs/plans/apercu-quartier.png)
 
 ## Avancement
 
 | # | Zone | État |
 |---|---|---|
-| 01 | [HLM des Prés Dombet](docs/batiments/01-hlm-pres-dombet.md) | Relevé fait, prefab de blockout généré — à tester dans Radiant |
-| 02 | Annexe à toit plat + parking | À faire |
-| 03 | Avenue Borcier (peupliers) | À faire |
-| 04 | École maternelle | À faire |
-| 05 | Barre nord (Chemin de la Fontaine) | À faire |
+| 01 | [Bâtiment 1 (HLM, 3 halls, R+4)](docs/batiments/01-hlm-pres-dombet.md) | Façades, 3 halls crème, escaliers, ascenseur scripté, 1 appartement jouable |
+| 02 | Bâtiment 2 (démoli, état 2023 : 2 halls, R+4) | Façades, 2 halls, escaliers, 1 appartement jouable |
+| 03 | Bâtiment 3 (3 halls, R+5) | Façades, 3 halls, escaliers, 1 appartement jouable |
+| 04 | Terrain (relief IGN), parkings haut et bas, annexe, garages, voirie | Fait |
+| 05 | Végétation (peupliers, sapins, feuillus), voitures, mobilier | Fait, à affiner |
+| 06 | Textures photo des façades | À faire |
+| 07 | École maternelle, maisons voisines détaillées | Volumes simples |
 
 ## Ce qu'il faut
 
@@ -25,29 +27,39 @@ On commence par le quartier des **Prés Dombet** et son HLM, qui sert de zone de
 
 ```
 game/                       copie des sources de la map, même arborescence que le dossier du jeu
-  map_source/zm/zm_seyssel.map
-  map_source/_prefabs/zm_seyssel/site_blockout.map   blockout du quartier, prêt à importer
-  usermaps/zm_seyssel/      scripts, zone_source, sons
+  map_source/zm/zm_seyssel.map                 map principale (gameplay, ascenseur, volumes, ciel)
+  map_source/_prefabs/zm_seyssel/quartier.map  terrain, voirie, végétation, voisins (généré)
+  map_source/_prefabs/zm_seyssel/batiment_*.map les trois immeubles (générés)
+  usermaps/zm_seyssel/      scripts (dont l'ascenseur), zone_source, sons
 docs/
   batiments/                une fiche par bâtiment (photos décrites, dimensions, ordre de construction)
   gameplay/                 parcours, portes, atouts, Mystery Box par zone
   plans/                    plan de dessus, aperçu 3D et coordonnées en unités Radiant
-reference/osm/              données OpenStreetMap du quartier
+reference/osm/              données OpenStreetMap du quartier (+ bâtiment 2 et garages d'après l'historique 2018)
+reference/ign/              relief IGN RGE ALTI (grille de 4 m)
 reference/photos/           tes photos perso (non publiées sur GitHub)
 tools/
-  sync.ps1                  copie dépôt <-> dossier du jeu
-  osm_to_plan.py            regénère le plan de dessus et les coordonnées
-  make_blockout.py          regénère le prefab de blockout
-  preview_blockout.py       regénère l'aperçu 3D à partir d'un .map
+  build_map.py              génère toute la map (appelle quartier.py et immeuble.py)
+  quartier.py               terrain, parkings, routes, annexe, garages, voisins, végétation, montagnes
+  immeuble.py               immeubles HLM : façades, halls, escaliers, appartement jouable, ascenseur
+  geo.py                    projection en unités de jeu, relief IGN
+  compile.ps1               compile (BSP, éclairage, link) et lance le jeu
+  sync.ps1                  copie dépôt <-> dossier des Mod Tools
+  preview_blockout.py       aperçu 3D / plans d'étage à partir des .map
+  make_blockout.py          briques géométriques et écriture des .map
+  osm_to_plan.py            plan de dessus et coordonnées (premier relevé)
 ```
 
-## Importer le blockout dans Radiant
+## Ce qu'il y a dans la map
 
-1. `.\tools\sync.ps1 -Vers Jeu` pour copier le prefab dans le dossier du jeu.
-2. Dans Radiant, ouvrir `zm_seyssel`, clic droit dans la vue 2D > **Misc > Prefab...**, choisir `_prefabs/zm_seyssel/site_blockout.map`.
-3. Placer le prefab en (0, 0, 0). Le HLM est centré sur l'origine, le sol est à z = 0.
+- **Trois immeubles** : bâtiment 1 beige (loggias et panneaux bruns côté halls, balcons filants à l'arrière), bâtiments 2 et 3 blancs (balcons en saillie au sud, halls au nord).
+- **Halls** identiques : entrée vitrée avec auvent, boîtes aux lettres, escalier à deux volées, paliers ; sols et marches couleur crème, murs crème.
+- **Ascenseur** dans le hall du milieu du bâtiment 1 : bouton dans la cabine (étage suivant) et bouton d'appel à chaque palier.
+- **Un appartement jouable par immeuble** (entrée, cuisine, salle de bain, deux chambres, séjour avec balcon), éclairé, prêt à être meublé.
+- **Terrain réel** (relief IGN) : le parking du haut est ~2,5 m au-dessus du parking qui longe le bâtiment 1.
+- **Rendu** : ciel et soleil de jour, étalonnage neutre, éclairage calculé en qualité moyenne, sondes de reflets dans les halls et les appartements.
 
-Le prefab contient le sol, les routes, le HLM (5 niveaux de 128, toit à deux pans, cheminées), l'annexe et les bâtiments voisins en volumes simples.
+Les prefabs générés peuvent être ouverts dans Radiant, mais ils sont réécrits à chaque `build_map.py` : les ajouts faits à la main vont dans la map principale ou dans un prefab à part.
 
 ## Travailler sur la map
 
@@ -88,7 +100,7 @@ Pièges réglés par `compile.ps1`, à connaître si tu passes par le Launcher :
 
 ## Échelle
 
-1 unité BO3 = 1 pouce = 2,54 cm, donc 1 m ≈ 39,4 unités. Les emprises des bâtiments viennent du cadastre ; la hauteur d'étage est fixée à 128 unités pour que le jeu reste confortable.
+1 unité BO3 = 1 pouce = 2,54 cm. Le quartier entier est agrandi de 25 % (`ECHELLE` dans `tools/geo.py`, 1 m réel ≈ 49 unités) : à l'échelle exacte, tout paraît petit en jeu, les maps officielles font pareil. Les immeubles sont en plus élargis (×1,6 au total en profondeur). Hauteur d'étage : 144 unités.
 
 ## Crédits
 

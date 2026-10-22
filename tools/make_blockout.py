@@ -210,6 +210,19 @@ def brush_lines(brushes, first=0):
     return lines
 
 
+def brush_lines_mat(brushes, first=0):
+    """Lignes .map de brushes dont chaque plan porte son materiau : [(normale, point, materiau)]."""
+    lines = []
+    for i, planes in enumerate(brushes, first):
+        lines += [f"// brush {i}", "{", f" guid \"{new_guid()}\""]
+        for n, p, mat in planes:
+            p1, p2, p3 = plane_points(n, p)
+            pts = " ".join("( " + " ".join(fmt(c) for c in q) + " )" for q in (p1, p2, p3))
+            lines.append(f" {pts} {mat} 256 256 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0")
+        lines.append("}")
+    return lines
+
+
 def write_map(brushes, path):
     reset_guids(path.name)
     lines = ["iwmap 4", "// entity 0", "{", f'guid "{new_guid()}"', '"classname" "worldspawn"']
@@ -221,7 +234,7 @@ def write_map(brushes, path):
 
 def check_brush(planes):
     """Verifie qu'un brush est un volume ferme : chaque face doit porter au moins 3 sommets."""
-    planes = [(norm(n), dot(norm(n), p)) for n, p in planes]
+    planes = [(norm(pl[0]), dot(norm(pl[0]), pl[1])) for pl in planes]
     verts = []
     for i in range(len(planes)):
         for j in range(i + 1, len(planes)):

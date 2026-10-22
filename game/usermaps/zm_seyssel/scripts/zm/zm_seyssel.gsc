@@ -69,6 +69,128 @@ function main()
 	level thread zm_zonemgr::manage_zones( init_zones );
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
+
+	level thread ascenseur_init();
+}
+
+//*****************************************************************************
+// ASCENSEUR DU BATIMENT 1 (hall du milieu)
+// Entites : script_brushmodel "ascenseur_cabine", "ascenseur_porte" (script_int = etage,
+// script_vector = glissement d'ouverture), trigger_use "ascenseur_bouton" (dans la cabine)
+// et "ascenseur_appel" (script_int = etage, devant chaque porte palliere).
+// Un etage = 144 unites, 1,6 s de trajet par etage.
+//*****************************************************************************
+
+function ascenseur_init()
+{
+	cabine = GetEnt( "ascenseur_cabine", "targetname" );
+	if ( !isdefined( cabine ) )
+	{
+		return;
+	}
+	cabine.etage = 0;
+	cabine.en_mouvement = false;
+	level.ascenseur_cabine = cabine;
+
+	level.ascenseur_portes = GetEntArray( "ascenseur_porte", "targetname" );
+	level.ascenseur_nb_etages = level.ascenseur_portes.size;
+	foreach ( porte in level.ascenseur_portes )
+	{
+		porte.position_fermee = porte.origin;
+	}
+	ascenseur_ouvrir( 0 );
+
+	bouton = GetEnt( "ascenseur_bouton", "targetname" );
+	if ( isdefined( bouton ) )
+	{
+		bouton EnableLinkTo();
+		bouton LinkTo( cabine );
+		bouton SetCursorHint( "HINT_NOICON" );
+		bouton SetHintString( "Appuyer sur ^3&&1^7 pour changer d'etage" );
+		bouton thread ascenseur_bouton_cabine();
+	}
+
+	foreach ( appel in GetEntArray( "ascenseur_appel", "targetname" ) )
+	{
+		appel SetCursorHint( "HINT_NOICON" );
+		appel SetHintString( "Appuyer sur ^3&&1^7 pour appeler l'ascenseur" );
+		appel thread ascenseur_bouton_appel();
+	}
+}
+
+function ascenseur_porte( etage )
+{
+	foreach ( porte in level.ascenseur_portes )
+	{
+		if ( porte.script_int == etage )
+		{
+			return porte;
+		}
+	}
+	return undefined;
+}
+
+function ascenseur_ouvrir( etage )
+{
+	porte = ascenseur_porte( etage );
+	if ( isdefined( porte ) )
+	{
+		porte MoveTo( porte.position_fermee + porte.script_vector, 0.6 );
+		porte waittill( "movedone" );
+	}
+}
+
+function ascenseur_fermer( etage )
+{
+	porte = ascenseur_porte( etage );
+	if ( isdefined( porte ) )
+	{
+		porte MoveTo( porte.position_fermee, 0.6 );
+		porte waittill( "movedone" );
+	}
+}
+
+function ascenseur_aller( etage )
+{
+	cabine = level.ascenseur_cabine;
+	if ( cabine.en_mouvement || etage == cabine.etage )
+	{
+		return;
+	}
+	cabine.en_mouvement = true;
+	ascenseur_fermer( cabine.etage );
+	ecart = etage - cabine.etage;
+	duree = Abs( ecart ) * 1.6;
+	cabine MoveZ( ecart * 144, duree, duree * 0.2, duree * 0.2 );
+	cabine waittill( "movedone" );
+	cabine.etage = etage;
+	ascenseur_ouvrir( etage );
+	cabine.en_mouvement = false;
+}
+
+function ascenseur_bouton_cabine()
+{
+	while ( true )
+	{
+		self waittill( "trigger", joueur );
+		cabine = level.ascenseur_cabine;
+		// monte d'un etage a chaque appui, redescend au rez-de-chaussee depuis le dernier
+		prochain = cabine.etage + 1;
+		if ( prochain >= level.ascenseur_nb_etages )
+		{
+			prochain = 0;
+		}
+		ascenseur_aller( prochain );
+	}
+}
+
+function ascenseur_bouton_appel()
+{
+	while ( true )
+	{
+		self waittill( "trigger", joueur );
+		ascenseur_aller( self.script_int );
+	}
 }
 
 function usermap_test_zone_init()

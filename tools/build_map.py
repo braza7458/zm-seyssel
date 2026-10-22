@@ -1,12 +1,11 @@
 """Fabrique la map jouable zm_seyssel a partir du modele zombies des Mod Tools.
 
-Ce que fait le script, comme le bouton "Create New Map" du Launcher :
-    - copie le modele "ZM Mod Level" en remplacant "template" par zm_seyssel
-puis, en plus :
-    - remplace la salle de test par le quartier (prefab site_blockout.map)
-    - agrandit le ciel et les volumes (soleil, umbra, zone de depart) au quartier
-    - deplace spawn, atouts, Mystery Box, Pack-a-Punch et courant sur le parking
-      a l'est du HLM, et verifie qu'aucun ne tombe dans un batiment
+    - quartier.py construit le terrain, la voirie, les trois immeubles, la vegetation
+      -> prefabs _prefabs/zm_seyssel/quartier.map et batiment_1..3.map
+    - le contenu de la salle de test du modele (spawn, atouts, Box, Pack-a-Punch,
+      courant) est pose sur le parking du haut, face au batiment 1, comme la photo 1
+    - le ciel, le soleil et les volumes sont agrandis au quartier et a ses montagnes
+    - l'ascenseur du batiment 1 (entites scriptees) est ecrit dans la map principale
 
 Usage :
     python tools/build_map.py ["<dossier des Mod Tools>"]
@@ -18,37 +17,40 @@ import shutil
 import sys
 from pathlib import Path
 
-from make_blockout import (box, brush_lines, build_site, check_brush, dot, new_guid, norm,
-                           reset_guids, write_map, OUT as SITE_PREFAB)
-from osm_to_plan import ROOT
+from geo import ROOT
+from make_blockout import box, brush_lines, brush_lines_mat, check_brush, new_guid, reset_guids
+from quartier import Quartier
 
 TOOLS = Path(r"D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III 455130")
 MAP = "zm_seyssel"
 GAME = ROOT / "game"
+PREFABS = GAME / "map_source" / "_prefabs" / MAP
 
-# Le contenu de la salle de test est tourne de 90 degres puis pose sur le parking
+# Le contenu de la salle de test est tourne de 90 degres puis pose sur le parking du haut
 ROTATION = 90
-DECALAGE = (900, -900)
+DECALAGE = (2487, -12)
 
 # Entites du modele qu'on ne reprend pas : la barricade colle a un mur de la salle de test
 SANS = {"_prefabs/zm/zm_core/barricade_reciever_wood.map"}
 
-# Cameras de fin de partie : vues sur le HLM depuis le parking et depuis l'avenue
+# Cameras de fin de partie : le batiment 1 vu du parking du haut, et le quartier vu du nord-ouest
 INTERMISSION = {
-    "intermission": ("1800 -1800 700", "9 135 0"),
-    "intermission_b": ("-1500 1600 600", "8 313 0"),
+    "intermission": ("3300 -200 420", "6 180 0"),
+    "intermission_b": ("-2600 5200 1500", "18 305 0"),
 }
 
-CIEL = 4160  # demi-largeur interieure de la boite de ciel
-CIEL_BAS, CIEL_HAUT = -128, 2304
+# Points ou les zombies sortent du sol, en plus de ceux du modele (pelouses, cour, abords)
+SORTIES_ZOMBIES = [(-1000, 0), (-1000, -2000), (-1000, 2000), (300, 2600), (1300, 3700), (3000, 3500),
+                   (4300, 2800), (3300, -1500), (1200, -2600), (-2500, 3900), (-300, -3200), (4500, 5200)]
 
-
-def place(origin):
-    x, y, z = (float(v) for v in origin.split())
-    a = math.radians(ROTATION)
-    nx = x * math.cos(a) - y * math.sin(a) + DECALAGE[0]
-    ny = x * math.sin(a) + y * math.cos(a) + DECALAGE[1]
-    return nx, ny, z
+# Rendu : ciel, soleil, etalonnage
+RENDU = {
+    "skyboxmodel": "skybox_default_day",
+    "ssi": "default_day",
+    "wsi": "default_day",
+    "lutmaterial": "luts_t7_default",
+    "lightingquality": "1024",
+}
 
 
 def fmt(v):
@@ -68,35 +70,46 @@ def parse(text):
     return head.rstrip(), ents
 
 
-def sky_box():
-    t, c = 64, CIEL
-    return [
-        ("sky", box(-c - t, -c - t, CIEL_BAS - t, c + t, c + t, CIEL_BAS)),
-        ("sky", box(-c - t, -c - t, CIEL_HAUT, c + t, c + t, CIEL_HAUT + t)),
-        ("sky", box(-c - t, -c - t, CIEL_BAS, -c, c + t, CIEL_HAUT)),
-        ("sky", box(c, -c - t, CIEL_BAS, c + t, c + t, CIEL_HAUT)),
-        ("sky", box(-c, -c - t, CIEL_BAS, c, -c, CIEL_HAUT)),
-        ("sky", box(-c, c, CIEL_BAS, c, c + t, CIEL_HAUT)),
-    ]
-
-
-# Volumes du modele, redimensionnes au quartier
-VOLUMES = {
-    "info_volume": ("volume", (-1400, -2600, 0, 2600, 2600, 1024)),
-    "volume_sun": ("sun_volume", (-CIEL, -CIEL, -64, CIEL, CIEL, CIEL_HAUT - 64)),
-    "umbra_volume": ("umbra_volume", (-CIEL, -CIEL, -256, CIEL, CIEL, 1600)),
-    "volume_fpstool": ("volume_fpstool", (-4096, -4096, -64, 4096, 4096, 1024)),
-}
-
-
-def entity_lines(index, kv, brushes=(), layer=None):
+def entity_lines(index, kv, brushes=(), layer=None, brushes_mat=()):
     lines = [f"// entity {index}", "{", f'guid "{new_guid()}"']
     if layer:
         lines.append(f'layer "{layer}"')
     lines += [f'"{k}" "{v}"' for k, v in kv if k != "guid"]
     lines += brush_lines(brushes)
+    lines += brush_lines_mat(brushes_mat)
     lines.append("}")
     return lines
+
+
+def dict_lines(index, e):
+    kv = [(k, v) for k, v in e.items() if not k.startswith("_")]
+    return entity_lines(index, kv, brushes_mat=e.get("_brushes", ()))
+
+
+def ecrire(path, lignes):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lignes) + "\n", encoding="latin-1", newline="\r\n")
+
+
+def prefab(path, brushes, entites):
+    bad = [i for i, b in enumerate(brushes) if not check_brush(b)]
+    if bad:
+        raise SystemExit(f"{path.name} : brushes invalides {bad[:10]}")
+    reset_guids(path.name)
+    lignes = ["iwmap 4", "// entity 0", "{", f'guid "{new_guid()}"', '"classname" "worldspawn"']
+    lignes += brush_lines_mat(brushes)
+    lignes.append("}")
+    for i, e in enumerate(entites, 1):
+        lignes += dict_lines(i, e)
+    ecrire(path, lignes)
+
+
+def sonde(x, y, z, rayon=1024):
+    return {"classname": "reflection_probe", "origin": f"{fmt(x)} {fmt(y)} {fmt(z)}", "radius": str(rayon),
+            "ao_power": "2", "ao_range": "16", "ao_strength": "1", "blend_maxs": "3 3 3", "blend_mins": "3 3 3",
+            "box": "1", "client_server": "ClientSide", "debugColor": "1 1 1", "exploderFade": "1",
+            "grid_density": "16", "high_detail": "1", "in_play_space": "1", "name": "probe",
+            "placement_offset": "72", "size_max": "72 72 72", "size_min": "72 72 72"}
 
 
 def main(tools=TOOLS):
@@ -104,16 +117,46 @@ def main(tools=TOOLS):
     tpl = tools / "rex" / "templates" / "ZM Mod Level"
     head, ents = parse((tpl / "map_source" / "zm" / "template.map").read_text(encoding="latin-1"))
 
-    site, _, _ = build_site()
-    write_map(site, SITE_PREFAB)
-    solides = [p for cat, p in site if cat in ("mur", "toit", "cheminee", "annexe", "voisin")]
-    solides = [[(norm(n), dot(norm(n), pt)) for n, pt in planes] for planes in solides]
+    q = Quartier().construire()
+    X0, X1, Y0, Y1 = q.X0, q.X1, q.Y0, q.Y1
+    cx, cy = (X0 + X1) / 2, (Y0 + Y1) / 2
 
-    def dans_batiment(x, y, z, marge=24):
-        for planes in solides:
-            if all(dot(n, (x, y, z + 8)) <= d + marge for n, d in planes):
-                return True
-        return False
+    # prefabs : quartier (terrain, voirie, vegetation) + un par immeuble
+    modeles = [e for e in q.entites if e["classname"] == "misc_model"]
+    prefab(PREFABS / "quartier.map", q.brushes, modeles)
+    for imm in q.immeubles:
+        prefab(PREFABS / f"{imm.nom}.map", imm.brushes, imm.entites)
+    ancien = PREFABS / "site_blockout.map"
+    if ancien.exists():
+        ancien.unlink()
+
+    def place(origin):
+        x, y, z = (float(v) for v in origin.split())
+        a = math.radians(ROTATION)
+        nx = x * math.cos(a) - y * math.sin(a) + DECALAGE[0]
+        ny = x * math.sin(a) + y * math.cos(a) + DECALAGE[1]
+        return nx, ny, z + q.z(nx, ny)
+
+    def dans_batiment(x, y, marge=24):
+        return any(e[0] - marge < x < e[2] + marge and e[1] - marge < y < e[3] + marge for e in q.emprises)
+
+    # volumes du modele, redimensionnes au quartier
+    C = 10400
+    volumes = {
+        "info_volume": ("volume", (X0, Y0, -256, X1, Y1, 1600)),
+        "volume_sun": ("sun_volume", (cx - C, cy - C, -960, cx + C, cy + C, 4500)),
+        "umbra_volume": ("umbra_volume", (X0 - 512, Y0 - 512, -512, X1 + 512, Y1 + 512, 2200)),
+        "volume_fpstool": ("volume_fpstool", (X0, Y0, -256, X1, Y1, 1600)),
+    }
+    t = 64
+    ciel = [
+        ("sky", box(cx - C - t, cy - C - t, -1024 - t, cx + C + t, cy + C + t, -1024)),
+        ("sky", box(cx - C - t, cy - C - t, 4608, cx + C + t, cy + C + t, 4608 + t)),
+        ("sky", box(cx - C - t, cy - C - t, -1024, cx - C, cy + C + t, 4608)),
+        ("sky", box(cx + C, cy - C - t, -1024, cx + C + t, cy + C + t, 4608)),
+        ("sky", box(cx - C, cy - C - t, -1024, cx + C, cy - C, 4608)),
+        ("sky", box(cx - C, cy + C, -1024, cx + C, cy + C + t, 4608)),
+    ]
 
     reset_guids(f"{MAP}.map")
     out, problemes, n = [head], [], 0
@@ -123,12 +166,12 @@ def main(tools=TOOLS):
         if d.get("model") in SANS:
             continue
         if cls == "worldspawn":
-            brushes = sky_box()
-            if not all(check_brush(p) for _, p in brushes):
-                raise SystemExit("boite de ciel invalide")
-            out += entity_lines(n, kv, brushes, layer)
-        elif cls in VOLUMES:
-            mat, b = VOLUMES[cls]
+            kv = [(k, RENDU.get(k, v)) for k, v in kv]
+            out += entity_lines(n, kv, ciel, layer)
+        elif cls in volumes:
+            mat, b = volumes[cls]
+            if cls == "volume_sun":
+                kv = [(k, "128" if k == "grid_density" else v) for k, v in kv]
             out += entity_lines(n, kv, [(mat, box(*b))], layer)
         else:
             kv = list(kv)
@@ -138,13 +181,15 @@ def main(tools=TOOLS):
                 if k == "origin":
                     x, y, z = place(v)
                     kv[i] = (k, f"{fmt(x)} {fmt(y)} {fmt(z)}")
-                    if cls != "actor_zm_nuked_basic_01" and "spawner" not in cls and dans_batiment(x, y, z):
+                    if cls != "actor_zm_nuked_basic_01" and "spawner" not in cls and dans_batiment(x, y):
                         problemes.append(f"{cls} {d.get('model', d.get('targetname', ''))} en ({x:.0f}, {y:.0f})")
                 elif k == "angles":
                     p, yaw, r = (float(a) for a in v.split())
                     kv[i] = (k, f"{fmt(p)} {fmt((yaw + ROTATION) % 360)} {fmt(r)}")
                 elif k == "script_string" and v == "receiver_set_entry_a":
                     kv[i] = (k, "find_flesh")
+                elif k == "radius" and cls == "reflection_probe":
+                    kv[i] = (k, "1600")
             name = d.get("targetname")
             if name in INTERMISSION and cls == "script_struct":
                 origin, angles = INTERMISSION[name]
@@ -152,18 +197,38 @@ def main(tools=TOOLS):
             out += entity_lines(n, kv, layer=layer)
         n += 1
 
-    out += entity_lines(n, [
-        ("classname", "misc_prefab"),
-        ("model", f"_prefabs/{MAP}/site_blockout.map"),
-        ("origin", "0 0 0"),
-    ])
+    supplement = []
+    # sorties de zombies dans tout le quartier
+    for x, y in SORTIES_ZOMBIES:
+        if not q.libre(x, y, 48):
+            continue
+        supplement.append({"classname": "script_struct", "origin": f"{x} {y} {fmt(q.z(x, y))}",
+                           "angles": f"0 {fmt(math.degrees(math.atan2(-y, -x)) % 360)} 0",
+                           "script_noteworthy": "riser_location", "script_string": "find_flesh",
+                           "targetname": "start_zone_spawners", "_color": "1 0 0"})
+    # ascenseur du batiment 1
+    for imm in q.immeubles:
+        supplement += imm.ascenseur_entites()
+    # sondes de reflets : halls, appartements jouables, exterieur
+    for imm in q.immeubles:
+        for k in range(imm.halls):
+            _, c0, c1, _ = imm.section(k)
+            supplement.append(sonde(*imm.monde((c0 + c1) / 2, 96, 64), rayon=400))
+        supplement.append(sonde(*imm.sonde, rayon=700))
+    for x, y in ((600, 0), (-1200, 1500), (1000, 3200), (3000, 3800)):
+        supplement.append(sonde(x, y, q.z(x, y) + 160, rayon=2400))
+    # prefabs du quartier et des immeubles
+    for nom in ["quartier"] + [imm.nom for imm in q.immeubles]:
+        supplement.append({"classname": "misc_prefab", "model": f"_prefabs/{MAP}/{nom}.map",
+                           "origin": "0 0 0", "angles": "0 0 0"})
+    for e in supplement:
+        out += dict_lines(n, e)
+        n += 1
 
     if problemes:
         raise SystemExit("Entites dans un batiment :\n  " + "\n  ".join(problemes))
 
-    dst = GAME / "map_source" / "zm" / f"{MAP}.map"
-    dst.parent.mkdir(parents=True, exist_ok=True)
-    dst.write_text("\n".join(out) + "\n", encoding="latin-1", newline="\r\n")
+    ecrire(GAME / "map_source" / "zm" / f"{MAP}.map", out)
 
     # Fichiers du dossier usermaps : copie du modele en renommant "template"
     for src in (tpl / "usermaps" / "template").rglob("*"):
@@ -179,7 +244,9 @@ def main(tools=TOOLS):
         else:
             target.write_text(src.read_text(encoding="latin-1").replace("template", MAP), encoding="latin-1")
 
-    print(f"{dst.relative_to(ROOT)} : {n + 1} entites, prefab du quartier : {len(site)} brushes")
+    nb_imm = sum(len(i.brushes) for i in q.immeubles)
+    print(f"{MAP}.map : {n} entites ; quartier {len(q.brushes)} brushes + {len(modeles)} modeles ; "
+          f"immeubles {nb_imm} brushes ; {sum(1 for e in q.entites if e['classname'] == 'light')} lumieres")
 
 
 if __name__ == "__main__":

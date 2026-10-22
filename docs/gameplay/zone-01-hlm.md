@@ -1,19 +1,19 @@
 # Gameplay — zone 1 : le HLM des Prés Dombet
 
-## Version jouable actuelle (v0.1, générée par `tools/build_map.py`)
+## Version jouable actuelle (v0.2, générée par `tools/build_map.py`)
 
-Le contenu de la salle de test officielle est posé sur le **parking, à l'est du HLM**. Le HLM reste un bloc plein pour l'instant.
+Le contenu de la salle de test officielle est posé sur le **parking du haut**, face au bâtiment 1 (comme la photo prise depuis ce parking). Les trois immeubles ont leurs halls, escaliers et un appartement ouvert chacun ; l'ascenseur du bâtiment 1 fonctionne.
 
 | Élément | Position (unités) |
 |---|---|
-| Spawn des joueurs | autour de (1300, -900), face au HLM |
-| Quick Revive, Juggernog, Speed Cola, Double Tap | alignés vers x ≈ 465, entre y -484 et -100 |
-| Mystery Box | (471, -1286) |
-| Pack-a-Punch | (705, 36) |
-| Interrupteur du courant | (860, 53) |
-| Fusil à pompe au mur | (869, -1346) |
-| Zombies (sortent du sol) | (708, -324), (708, -1476), (324, -900) au pied du HLM |
-| Zone de départ | tout le quartier entre x -1400 et 2600 |
+| Spawn des joueurs | (2935, -12), bord est du parking du haut, face au bâtiment 1 |
+| Quick Revive, Juggernog, Speed Cola, Double Tap | alignés vers x ≈ 2050, entre y 404 et 788 |
+| Mystery Box | (2058, -398) |
+| Pack-a-Punch | (2292, 924) |
+| Interrupteur du courant | (2447, 941) |
+| Fusil à pompe | (2456, -458) |
+| Zombies (sortent du sol) | 3 sur le parking du haut + 12 répartis sur les pelouses du quartier |
+| Zone de départ | tout le quartier, intérieurs compris |
 
 ## Plan cible
 

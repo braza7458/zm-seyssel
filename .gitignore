@@ -1,0 +1,18 @@
+# Fichiers compiles par le Launcher BO3
+game/usermaps/*/zone/
+*.ff
+*.xpak
+*.d3dbsp
+
+# Sauvegardes Radiant
+*.bak
+*.autosave*
+
+# Photos de reference personnelles (non publiees)
+reference/photos/*
+!reference/photos/.gitkeep
+
+# Divers
+__pycache__/
+Thumbs.db
+desktop.ini

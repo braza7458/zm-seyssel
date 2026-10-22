@@ -1,0 +1,4 @@
+* text=auto
+# Les .map de Radiant : pas de conversion de fins de ligne, mais diff lisible
+*.map -text diff
+*.ps1 text eol=crlf

@@ -7,15 +7,17 @@ On commence par le quartier des **Prés Dombet** et ses trois immeubles HLM.
 
 ## Avancement
 
+État détaillé et chantiers : [`DEVELOPPEMENT.md`](DEVELOPPEMENT.md) · journal des sessions : [`DEVLOG.md`](DEVLOG.md) · règles pour Claude Code : [`CLAUDE.md`](CLAUDE.md).
+
 | # | Zone | État |
 |---|---|---|
 | 01 | [Bâtiment 1 (HLM, 3 halls, R+4)](docs/batiments/01-hlm-pres-dombet.md) | Façades, 3 halls crème, escaliers, ascenseur scripté, 1 appartement jouable |
-| 02 | Bâtiment 2 (démoli, état 2023 : 2 halls, R+4) | Façades, 2 halls, escaliers, 1 appartement jouable |
-| 03 | Bâtiment 3 (3 halls, R+5) | Façades, 3 halls, escaliers, 1 appartement jouable |
-| 04 | Terrain (relief IGN), parkings haut et bas, annexe, garages, voirie | Fait |
-| 05 | Végétation (peupliers, sapins, feuillus), voitures, mobilier | Fait, à affiner |
-| 06 | Textures photo des façades | À faire |
-| 07 | École maternelle, maisons voisines détaillées | Volumes simples |
+| 02 | Bâtiment 2 (démoli, état 2023 : 2 halls, R+4) | Copie du gabarit du bâtiment 1, lucarnes, 1 appartement jouable |
+| 03 | Bâtiment 3 (3 halls, R+4) | Copie du gabarit du bâtiment 1, lucarnes, 1 appartement jouable |
+| 04 | Terrain (relief IGN), parkings, annexe, garages, voirie (BD TOPO), trottoirs, marquages | Fait (v0.3) |
+| 05 | Végétation d'après le LiDAR, voitures, mobilier | Fait (v0.3) |
+| 06 | Textures réalistes (échelle par matériau, 59 matériaux vérifiés dans les GDT) | Fait (v0.3), à juger en jeu |
+| 07 | École maternelle, Maison de Pays, maisons voisines (volumes, toits, fenêtres, volets, portes d'après IGN) | Fait (v0.3), à affiner |
 
 ## Ce qu'il faut
 
@@ -28,7 +30,7 @@ On commence par le quartier des **Prés Dombet** et ses trois immeubles HLM.
 ```
 game/                       copie des sources de la map, même arborescence que le dossier du jeu
   map_source/zm/zm_seyssel.map                 map principale (gameplay, ascenseur, volumes, ciel)
-  map_source/_prefabs/zm_seyssel/quartier.map  terrain, voirie, végétation, voisins (généré)
+  map_source/_prefabs/zm_seyssel/*.map         terrain, voirie, trottoirs, maisons, végétation, décor... un prefab par groupe (généré)
   map_source/_prefabs/zm_seyssel/batiment_*.map les trois immeubles (générés)
   usermaps/zm_seyssel/      scripts (dont l'ascenseur), zone_source, sons
 docs/
@@ -36,26 +38,44 @@ docs/
   gameplay/                 parcours, portes, atouts, Mystery Box par zone
   plans/                    plan de dessus, aperçu 3D et coordonnées en unités Radiant
 reference/osm/              données OpenStreetMap du quartier (+ bâtiment 2 et garages d'après l'historique 2018)
-reference/ign/              relief IGN RGE ALTI (grille de 4 m)
+reference/ign/              relief IGN RGE ALTI (grille de 4 m), bâtiments et routes BD TOPO, arbres et toits LiDAR
+reference/materiaux.json    inventaire des matériaux et modèles des Mod Tools
 reference/photos/           tes photos perso (non publiées sur GitHub)
 tools/
   build_map.py              génère toute la map (appelle quartier.py et immeuble.py)
-  quartier.py               terrain, parkings, routes, annexe, garages, voisins, végétation, montagnes
-  immeuble.py               immeubles HLM : façades, halls, escaliers, appartement jouable, ascenseur
+  quartier.py               terrain, parkings, annexe, garages, végétation, décor, montagnes
+  voirie.py                 routes (rubans BD TOPO), trottoirs, passages piétons, places de stationnement
+  maisons.py                maisons, école, Maison de Pays d'après la BD TOPO et le LiDAR
+  immeuble.py               gabarit des immeubles HLM : façades, halls, loggias, balcons filants, toit, escaliers, appartement, ascenseur
+  geom.py                   toits (croupes, pignons, plats) et lucarnes
+  monde.py                  zone jouable (quartier + couloir jusqu'au Carrefour), terrain en quadtree, horizon comprimé
+  grille.py                 constantes du cadre et loi de compression de l'horizon
+  corridor_donnees.py       télécharge altitudes IGN, bâtiments BD TOPO, parcelles, végétation du couloir
+  sols.py                   cours et surfaces dures, parkings et places, jardins fermés (haies, murets)
+  sols_donnees.py           lit la nature du sol sur l'orthophoto -> reference/ign/sols_couloir.json
+  carrefour.py              Carrefour Market et sa station-service
+  ortho_jeu.py              orthophoto IGN dans le repère du jeu ; controle_ortho.py y superpose la map générée
+  materiaux.py              dictionnaire des matériaux, échelle des textures ; `python tools/materiaux.py` vérifie les noms dans les GDT
   geo.py                    projection en unités de jeu, relief IGN
   compile.ps1               compile (BSP, éclairage, link) et lance le jeu
   sync.ps1                  copie dépôt <-> dossier des Mod Tools
-  preview_blockout.py       aperçu 3D / plans d'étage à partir des .map
+  preview_blockout.py       aperçu 3D / plans d'étage à partir des .map (SVG, lent)
+  preview_png.py            rendu PNG rapide (z-buffer) des .map : vues de façade, plans, z-fighting
+  vues_standard.py          26 cadrages fixes (façades, balcons, voisins, routes) pour comparer avant/après
   make_blockout.py          briques géométriques et écriture des .map
   osm_to_plan.py            plan de dessus et coordonnées (premier relevé)
 ```
 
+Les rendus de `preview_png.py` vont dans `_build/renders/` (ignoré par git). L'audit de l'état v0.2 est dans [`docs/references/audit-v0.2.md`](docs/references/audit-v0.2.md).
+
 ## Ce qu'il y a dans la map
 
-- **Trois immeubles** : bâtiment 1 beige (loggias et panneaux bruns côté halls, balcons filants à l'arrière), bâtiments 2 et 3 blancs (balcons en saillie au sud, halls au nord).
+- **Trois immeubles** construits avec le même gabarit (celui du bâtiment 1) : halls en avant-corps à panneaux bruns, loggias en retrait, grille de fenêtres par logement, balcons filants et continus à l'arrière, toit à quatre pans, souches de cheminée. Les bâtiments 2 et 3 ont en plus des lucarnes. Détails et cotes : [`docs/conception-v0.3.md`](docs/conception-v0.3.md).
 - **Halls** identiques : entrée vitrée avec auvent, boîtes aux lettres, escalier à deux volées, paliers ; sols et marches couleur crème, murs crème.
 - **Ascenseur** dans le hall du milieu du bâtiment 1 : bouton dans la cabine (étage suivant) et bouton d'appel à chaque palier.
 - **Un appartement jouable par immeuble** (entrée, cuisine, salle de bain, deux chambres, séjour avec balcon), éclairé, prêt à être meublé.
+- **Couloir jusqu'au Carrefour** : la rue des Prés Dombet, la rue François Doche, la rue du Mont des Princes et la route de Genève, à l'échelle réelle (environ 1 km), avec leurs maisons (BD TOPO), parkings, jardins fermés, la station-service et le Carrefour Market. Les rues de côté sont barrées.
+- **Horizon réel** : au-delà du cadre jouable, le terrain suit le relief IGN jusqu'au Grand Colombier ; les routes de sortie sont barrées (voitures, béton, sacs de sable, barbelés).
 - **Terrain réel** (relief IGN) : le parking du haut est ~2,5 m au-dessus du parking qui longe le bâtiment 1.
 - **Rendu** : ciel et soleil de jour, étalonnage neutre, éclairage calculé en qualité moyenne, sondes de reflets dans les halls et les appartements.
 

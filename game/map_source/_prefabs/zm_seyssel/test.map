@@ -1,0 +1,416 @@
+iwmap 4
+// entity 0
+{
+guid "{C4CEB921-4AFF-53A9-AB77-B2AF1830E0D9}"
+"classname" "worldspawn"
+// brush 0
+{
+ guid "{9B948157-9CE2-5326-A98B-0A70D7DFC716}"
+ ( 2120 0 0 ) ( 2120 0 -256 ) ( 2120 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2192.31 0 0 ) ( 2192.31 0 -256 ) ( 2192.31 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 95.43 ) ( -256 0 95.43 ) ( 0 -256 95.43 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 147.43 ) ( -256 0 147.43 ) ( 0 256 147.43 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ guid "{DF2939E6-F6C0-568C-B806-C7768CD62A66}"
+ ( 2120 0 0 ) ( 2120 0 -256 ) ( 2120 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2192.31 0 0 ) ( 2192.31 0 -256 ) ( 2192.31 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 147.43 ) ( -256 0 147.43 ) ( 0 -256 147.43 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 305.43 ) ( -256 0 305.43 ) ( 0 256 305.43 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+ guid "{1F39C78B-E301-5DD4-864C-8E651813EEE6}"
+ ( 2120 0 0 ) ( 2120 0 -256 ) ( 2120 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2192.31 0 0 ) ( 2192.31 0 -256 ) ( 2192.31 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 305.43 ) ( -256 0 305.43 ) ( 0 -256 305.43 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 317.43 ) ( -256 0 317.43 ) ( 0 256 317.43 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+ guid "{0A20FFA2-CAA1-509F-9C8E-93586F59CD70}"
+ ( 2192.31 0 0 ) ( 2192.31 0 -256 ) ( 2192.31 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2264.61 0 0 ) ( 2264.61 0 -256 ) ( 2264.61 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 93.736 ) ( -256 0 93.736 ) ( 0 -256 93.736 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 145.736 ) ( -256 0 145.736 ) ( 0 256 145.736 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+ guid "{860FB966-9962-5C45-A6A3-91955EBA5A12}"
+ ( 2192.31 0 0 ) ( 2192.31 0 -256 ) ( 2192.31 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2264.61 0 0 ) ( 2264.61 0 -256 ) ( 2264.61 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 145.736 ) ( -256 0 145.736 ) ( 0 -256 145.736 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 303.736 ) ( -256 0 303.736 ) ( 0 256 303.736 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+ guid "{512BFABC-0063-54B5-99EC-D9EEE9AB6113}"
+ ( 2192.31 0 0 ) ( 2192.31 0 -256 ) ( 2192.31 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2264.61 0 0 ) ( 2264.61 0 -256 ) ( 2264.61 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 303.736 ) ( -256 0 303.736 ) ( 0 -256 303.736 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 315.736 ) ( -256 0 315.736 ) ( 0 256 315.736 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+ guid "{9EB73F7B-DE19-5E2A-AFAA-CBD91A71DC23}"
+ ( 2264.61 0 0 ) ( 2264.61 0 -256 ) ( 2264.61 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2336.92 0 0 ) ( 2336.92 0 -256 ) ( 2336.92 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 92.169 ) ( -256 0 92.169 ) ( 0 -256 92.169 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 144.169 ) ( -256 0 144.169 ) ( 0 256 144.169 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 7
+{
+ guid "{36830662-3431-5DE7-9233-D986B74A05A2}"
+ ( 2264.61 0 0 ) ( 2264.61 0 -256 ) ( 2264.61 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2336.92 0 0 ) ( 2336.92 0 -256 ) ( 2336.92 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 144.169 ) ( -256 0 144.169 ) ( 0 -256 144.169 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 302.169 ) ( -256 0 302.169 ) ( 0 256 302.169 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 8
+{
+ guid "{33E0783A-DC53-55F0-90F2-C82C7DC093A0}"
+ ( 2264.61 0 0 ) ( 2264.61 0 -256 ) ( 2264.61 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2336.92 0 0 ) ( 2336.92 0 -256 ) ( 2336.92 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 302.169 ) ( -256 0 302.169 ) ( 0 -256 302.169 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 314.169 ) ( -256 0 314.169 ) ( 0 256 314.169 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 9
+{
+ guid "{9FFE04C9-BAAF-5BDE-AFD5-3B7A9D7EFCC9}"
+ ( 2336.92 0 0 ) ( 2336.92 0 -256 ) ( 2336.92 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2409.23 0 0 ) ( 2409.23 0 -256 ) ( 2409.23 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 90.757 ) ( -256 0 90.757 ) ( 0 -256 90.757 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 142.757 ) ( -256 0 142.757 ) ( 0 256 142.757 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 10
+{
+ guid "{5408C673-FB25-51A3-ADD9-5180929BFFEC}"
+ ( 2336.92 0 0 ) ( 2336.92 0 -256 ) ( 2336.92 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2409.23 0 0 ) ( 2409.23 0 -256 ) ( 2409.23 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 142.757 ) ( -256 0 142.757 ) ( 0 -256 142.757 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 300.757 ) ( -256 0 300.757 ) ( 0 256 300.757 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 11
+{
+ guid "{C487D981-CD25-5BC8-AC40-2FECA19E9B81}"
+ ( 2336.92 0 0 ) ( 2336.92 0 -256 ) ( 2336.92 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2409.23 0 0 ) ( 2409.23 0 -256 ) ( 2409.23 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 300.757 ) ( -256 0 300.757 ) ( 0 -256 300.757 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 312.757 ) ( -256 0 312.757 ) ( 0 256 312.757 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 12
+{
+ guid "{C7AD66D4-9897-58B2-A0A0-3CCCC1E2B375}"
+ ( 2409.23 0 0 ) ( 2409.23 0 -256 ) ( 2409.23 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2481.54 0 0 ) ( 2481.54 0 -256 ) ( 2481.54 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 89.345 ) ( -256 0 89.345 ) ( 0 -256 89.345 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 141.345 ) ( -256 0 141.345 ) ( 0 256 141.345 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 13
+{
+ guid "{CB82DEAF-0A01-5C0D-BEA9-13F524DE20A6}"
+ ( 2409.23 0 0 ) ( 2409.23 0 -256 ) ( 2409.23 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2481.54 0 0 ) ( 2481.54 0 -256 ) ( 2481.54 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 141.345 ) ( -256 0 141.345 ) ( 0 -256 141.345 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 299.345 ) ( -256 0 299.345 ) ( 0 256 299.345 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 14
+{
+ guid "{1F3E7BEA-0CD7-504D-9E33-DD3B4CC521D3}"
+ ( 2409.23 0 0 ) ( 2409.23 0 -256 ) ( 2409.23 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2481.54 0 0 ) ( 2481.54 0 -256 ) ( 2481.54 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 299.345 ) ( -256 0 299.345 ) ( 0 -256 299.345 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 311.345 ) ( -256 0 311.345 ) ( 0 256 311.345 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 15
+{
+ guid "{7DB5A982-E735-51BE-A7C9-879258F3ADE3}"
+ ( 2481.54 0 0 ) ( 2481.54 0 -256 ) ( 2481.54 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2553.85 0 0 ) ( 2553.85 0 -256 ) ( 2553.85 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 87.575 ) ( -256 0 87.575 ) ( 0 -256 87.575 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 139.575 ) ( -256 0 139.575 ) ( 0 256 139.575 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 16
+{
+ guid "{FB4791CF-86E8-5686-8E1E-ABAED1E0EF70}"
+ ( 2481.54 0 0 ) ( 2481.54 0 -256 ) ( 2481.54 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2553.85 0 0 ) ( 2553.85 0 -256 ) ( 2553.85 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 139.575 ) ( -256 0 139.575 ) ( 0 -256 139.575 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 297.575 ) ( -256 0 297.575 ) ( 0 256 297.575 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 17
+{
+ guid "{C4FDFF42-13A0-5625-AAD5-DE9D7C63A319}"
+ ( 2481.54 0 0 ) ( 2481.54 0 -256 ) ( 2481.54 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2553.85 0 0 ) ( 2553.85 0 -256 ) ( 2553.85 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 297.575 ) ( -256 0 297.575 ) ( 0 -256 297.575 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 309.575 ) ( -256 0 309.575 ) ( 0 256 309.575 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 18
+{
+ guid "{14B65F48-5157-5084-B437-D986F6D00102}"
+ ( 2553.85 0 0 ) ( 2553.85 0 -256 ) ( 2553.85 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2626.15 0 0 ) ( 2626.15 0 -256 ) ( 2626.15 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 86.059 ) ( -256 0 86.059 ) ( 0 -256 86.059 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 138.059 ) ( -256 0 138.059 ) ( 0 256 138.059 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 19
+{
+ guid "{B416E5CD-8AFD-56A4-BE7F-E2E8CEDD4B7E}"
+ ( 2553.85 0 0 ) ( 2553.85 0 -256 ) ( 2553.85 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2626.15 0 0 ) ( 2626.15 0 -256 ) ( 2626.15 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 138.059 ) ( -256 0 138.059 ) ( 0 -256 138.059 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 296.059 ) ( -256 0 296.059 ) ( 0 256 296.059 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 20
+{
+ guid "{1E575A55-E33C-566F-A5A3-B03322794A79}"
+ ( 2553.85 0 0 ) ( 2553.85 0 -256 ) ( 2553.85 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2626.15 0 0 ) ( 2626.15 0 -256 ) ( 2626.15 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 296.059 ) ( -256 0 296.059 ) ( 0 -256 296.059 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 308.059 ) ( -256 0 308.059 ) ( 0 256 308.059 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 21
+{
+ guid "{F0B16761-6935-57AC-B297-E18E04AFFCDF}"
+ ( 2626.15 0 0 ) ( 2626.15 0 -256 ) ( 2626.15 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2698.46 0 0 ) ( 2698.46 0 -256 ) ( 2698.46 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 84.364 ) ( -256 0 84.364 ) ( 0 -256 84.364 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 136.364 ) ( -256 0 136.364 ) ( 0 256 136.364 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 22
+{
+ guid "{BBE02923-7DF5-5A3B-B6AD-C897F3B52244}"
+ ( 2626.15 0 0 ) ( 2626.15 0 -256 ) ( 2626.15 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2698.46 0 0 ) ( 2698.46 0 -256 ) ( 2698.46 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 136.364 ) ( -256 0 136.364 ) ( 0 -256 136.364 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 294.364 ) ( -256 0 294.364 ) ( 0 256 294.364 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 23
+{
+ guid "{27D52BA6-10BE-51AF-8F98-A21889DA05CD}"
+ ( 2626.15 0 0 ) ( 2626.15 0 -256 ) ( 2626.15 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2698.46 0 0 ) ( 2698.46 0 -256 ) ( 2698.46 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 294.364 ) ( -256 0 294.364 ) ( 0 -256 294.364 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 306.364 ) ( -256 0 306.364 ) ( 0 256 306.364 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 24
+{
+ guid "{A550C8C4-E655-5BD5-B3E5-30168720C3A3}"
+ ( 2698.46 0 0 ) ( 2698.46 0 -256 ) ( 2698.46 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2770.77 0 0 ) ( 2770.77 0 -256 ) ( 2770.77 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 82.669 ) ( -256 0 82.669 ) ( 0 -256 82.669 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 134.669 ) ( -256 0 134.669 ) ( 0 256 134.669 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 25
+{
+ guid "{A500F68B-F0BF-5BFE-B5D8-9F482AFEE115}"
+ ( 2698.46 0 0 ) ( 2698.46 0 -256 ) ( 2698.46 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2770.77 0 0 ) ( 2770.77 0 -256 ) ( 2770.77 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 134.669 ) ( -256 0 134.669 ) ( 0 -256 134.669 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 292.669 ) ( -256 0 292.669 ) ( 0 256 292.669 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 26
+{
+ guid "{88B312C9-63C9-5768-B56F-8D92741A6220}"
+ ( 2698.46 0 0 ) ( 2698.46 0 -256 ) ( 2698.46 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2770.77 0 0 ) ( 2770.77 0 -256 ) ( 2770.77 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 292.669 ) ( -256 0 292.669 ) ( 0 -256 292.669 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 304.669 ) ( -256 0 304.669 ) ( 0 256 304.669 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 27
+{
+ guid "{06B7C4C1-A85A-5597-A0C0-6E93FBAB1760}"
+ ( 2770.77 0 0 ) ( 2770.77 0 -256 ) ( 2770.77 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2843.08 0 0 ) ( 2843.08 0 -256 ) ( 2843.08 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 81.186 ) ( -256 0 81.186 ) ( 0 -256 81.186 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 133.186 ) ( -256 0 133.186 ) ( 0 256 133.186 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 28
+{
+ guid "{C1A76290-AC23-50E2-A0E5-F5B12854F312}"
+ ( 2770.77 0 0 ) ( 2770.77 0 -256 ) ( 2770.77 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2843.08 0 0 ) ( 2843.08 0 -256 ) ( 2843.08 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 133.186 ) ( -256 0 133.186 ) ( 0 -256 133.186 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 291.186 ) ( -256 0 291.186 ) ( 0 256 291.186 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 29
+{
+ guid "{A6C5EBFD-2798-5B00-AB63-16A697649D44}"
+ ( 2770.77 0 0 ) ( 2770.77 0 -256 ) ( 2770.77 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2843.08 0 0 ) ( 2843.08 0 -256 ) ( 2843.08 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 291.186 ) ( -256 0 291.186 ) ( 0 -256 291.186 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 303.186 ) ( -256 0 303.186 ) ( 0 256 303.186 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 30
+{
+ guid "{34A44B46-00CB-5D98-B529-754D70E1ED60}"
+ ( 2843.08 0 0 ) ( 2843.08 0 -256 ) ( 2843.08 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2915.39 0 0 ) ( 2915.39 0 -256 ) ( 2915.39 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 80.056 ) ( -256 0 80.056 ) ( 0 -256 80.056 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 132.056 ) ( -256 0 132.056 ) ( 0 256 132.056 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 31
+{
+ guid "{5B830EC9-F346-5B82-991C-3BB18EAC724B}"
+ ( 2843.08 0 0 ) ( 2843.08 0 -256 ) ( 2843.08 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2915.39 0 0 ) ( 2915.39 0 -256 ) ( 2915.39 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 132.056 ) ( -256 0 132.056 ) ( 0 -256 132.056 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 290.056 ) ( -256 0 290.056 ) ( 0 256 290.056 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 32
+{
+ guid "{5C19CECC-1BF0-5421-8123-D7F21ACFBB54}"
+ ( 2843.08 0 0 ) ( 2843.08 0 -256 ) ( 2843.08 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2915.39 0 0 ) ( 2915.39 0 -256 ) ( 2915.39 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 290.056 ) ( -256 0 290.056 ) ( 0 -256 290.056 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 302.056 ) ( -256 0 302.056 ) ( 0 256 302.056 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 33
+{
+ guid "{7FF7B0E6-B11E-51D6-A259-92B01252034C}"
+ ( 2915.39 0 0 ) ( 2915.39 0 -256 ) ( 2915.39 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2987.69 0 0 ) ( 2987.69 0 -256 ) ( 2987.69 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 78.927 ) ( -256 0 78.927 ) ( 0 -256 78.927 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 130.927 ) ( -256 0 130.927 ) ( 0 256 130.927 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 34
+{
+ guid "{88093EEA-25D4-5122-B5FE-DB4615DEE31F}"
+ ( 2915.39 0 0 ) ( 2915.39 0 -256 ) ( 2915.39 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2987.69 0 0 ) ( 2987.69 0 -256 ) ( 2987.69 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 130.927 ) ( -256 0 130.927 ) ( 0 -256 130.927 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 288.927 ) ( -256 0 288.927 ) ( 0 256 288.927 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 35
+{
+ guid "{3E0FA52D-FB0D-5EF4-BD92-BE9E5DCE45F5}"
+ ( 2915.39 0 0 ) ( 2915.39 0 -256 ) ( 2915.39 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2987.69 0 0 ) ( 2987.69 0 -256 ) ( 2987.69 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 288.927 ) ( -256 0 288.927 ) ( 0 -256 288.927 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 300.927 ) ( -256 0 300.927 ) ( 0 256 300.927 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 36
+{
+ guid "{B2BAB7BA-495B-593B-9106-5886CBED85CA}"
+ ( 2987.69 0 0 ) ( 2987.69 0 -256 ) ( 2987.69 256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3060 0 0 ) ( 3060 0 -256 ) ( 3060 -256 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 78.266 ) ( -256 0 78.266 ) ( 0 -256 78.266 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 130.266 ) ( -256 0 130.266 ) ( 0 256 130.266 ) t7_concrete_floor_sealed_01_warm 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 37
+{
+ guid "{55C9C14C-7A27-59D9-8B56-0D767C67A9A6}"
+ ( 2987.69 0 0 ) ( 2987.69 0 -256 ) ( 2987.69 256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3060 0 0 ) ( 3060 0 -256 ) ( 3060 -256 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 130.266 ) ( -256 0 130.266 ) ( 0 -256 130.266 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 288.266 ) ( -256 0 288.266 ) ( 0 256 288.266 ) t7_plaster_smooth_light_01 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 38
+{
+ guid "{0D1A8DD0-940E-5DD9-AF6A-7F11EDCF720C}"
+ ( 2987.69 0 0 ) ( 2987.69 0 -256 ) ( 2987.69 256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3060 0 0 ) ( 3060 0 -256 ) ( 3060 -256 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -732 0 ) ( 0 -732 -256 ) ( -256 -732 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -716 0 ) ( 0 -716 -256 ) ( 256 -716 0 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 288.266 ) ( -256 0 288.266 ) ( 0 -256 288.266 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 300.266 ) ( -256 0 300.266 ) ( 0 256 300.266 ) t7_concrete_trim_beveled_03 160 40 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 39
+{
+ guid "{906E02C7-064C-5F9B-9AEC-74AEA4B7C7C3}"
+ ( 2672 0 0 ) ( 2672 0 -256 ) ( 2672 256 0 ) t7_metal_panels_painted_2x1_grey 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2728 0 0 ) ( 2728 0 -256 ) ( 2728 -256 0 ) t7_metal_panels_painted_2x1_grey 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -580 0 ) ( 0 -580 -256 ) ( -256 -580 0 ) t7_metal_panels_painted_2x1_grey 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -540 0 ) ( 0 -540 -256 ) ( 256 -540 0 ) t7_metal_panels_painted_2x4_green 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 117.891 ) ( -256 0 117.891 ) ( 0 -256 117.891 ) t7_metal_panels_painted_2x1_grey 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 245.891 ) ( -256 0 245.891 ) ( 0 256 245.891 ) t7_metal_panels_painted_2x1_grey 160 160 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 40
+{
+ guid "{A16A9715-933C-50A7-B934-95019A5408DA}"
+ ( 2672 0 0 ) ( 2672 0 -256 ) ( 2672 256 0 ) t7_metal_bare_graphite_matte 80 80 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2728 0 0 ) ( 2728 0 -256 ) ( 2728 -256 0 ) t7_metal_bare_graphite_matte 80 80 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -580 0 ) ( 0 -580 -256 ) ( -256 -580 0 ) t7_metal_bare_graphite_matte 80 80 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -540 0 ) ( 0 -540 -256 ) ( 256 -540 0 ) t7_metal_bare_graphite_matte 80 80 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 245.891 ) ( -256 0 245.891 ) ( 0 -256 245.891 ) t7_metal_bare_graphite_matte 80 80 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 253.891 ) ( -256 0 253.891 ) ( 0 256 253.891 ) t7_metal_bare_graphite_matte 80 80 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

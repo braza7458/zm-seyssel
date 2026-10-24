@@ -20,6 +20,7 @@
 #using scripts\zm\_zm;
 #using scripts\zm\_zm_audio;
 #using scripts\zm\_zm_powerups;
+#using scripts\zm\_zm_score;
 #using scripts\zm\_zm_utility;
 #using scripts\zm\_zm_weapons;
 #using scripts\zm\_zm_zonemgr;
@@ -71,6 +72,7 @@ function main()
 	level.pathdist_type = PATHDIST_ORIGINAL;
 
 	level thread ascenseur_init();
+	level thread zone_test_init();
 }
 
 //*****************************************************************************
@@ -204,3 +206,38 @@ function custom_add_weapons()
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
 }
 
+
+
+//*****************************************************************************
+// ZONE DE TEST : machine a points et courant allume des le debut
+//*****************************************************************************
+
+function zone_test_init()
+{
+	level flag::wait_till( "initial_blackscreen_passed" );
+	// le courant est allume tout de suite : atouts et Pack-a-Punch utilisables sans chercher l'interrupteur
+	level flag::set( "power_on" );
+	level notify( "power_on" );
+
+	foreach ( bouton in GetEntArray( "bouton_argent", "targetname" ) )
+	{
+		bouton SetHintString( "Appuyer sur &&1 pour recevoir 10000 points" );
+		bouton SetCursorHint( "HINT_NOICON" );
+		bouton thread bouton_argent();
+	}
+}
+
+function bouton_argent()
+{
+	while ( true )
+	{
+		self waittill( "trigger", joueur );
+		if ( !IsPlayer( joueur ) )
+		{
+			continue;
+		}
+		joueur zm_score::add_to_player_score( 10000 );
+		joueur PlaySound( "zmb_cha_ching" );
+		wait 0.5;
+	}
+}

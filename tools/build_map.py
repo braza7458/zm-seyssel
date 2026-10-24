@@ -23,6 +23,7 @@ from quartier import Quartier
 
 TOOLS = Path(r"D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III 455130")
 MAP = "zm_seyssel"
+MAX_BRUSHES = 1800  # brushes par prefab (fichiers de moins de 2 Mo)
 GAME = ROOT / "game"
 PREFABS = GAME / "map_source" / "_prefabs" / MAP
 
@@ -31,7 +32,8 @@ ROTATION = 90
 DECALAGE = (2487, -12)
 
 # Entites du modele qu'on ne reprend pas : la barricade colle a un mur de la salle de test
-SANS = {"_prefabs/zm/zm_core/barricade_reciever_wood.map"}
+SANS = {"_prefabs/zm/zm_core/barricade_reciever_wood.map",
+        "_prefabs/zm/zm_core/spawnable_weapon_shotgun_pump.map"}  # le fusil est remis sur le mur d'armes
 
 # Cameras de fin de partie : le batiment 1 vu du parking du haut, et le quartier vu du nord-ouest
 INTERMISSION = {
@@ -41,7 +43,8 @@ INTERMISSION = {
 
 # Points ou les zombies sortent du sol, en plus de ceux du modele (pelouses, cour, abords)
 SORTIES_ZOMBIES = [(-1000, 0), (-1000, -2000), (-1000, 2000), (300, 2600), (1300, 3700), (3000, 3500),
-                   (4300, 2800), (3300, -1500), (1200, -2600), (-2500, 3900), (-300, -3200), (4500, 5200)]
+                   (4300, 2800), (3300, -1500), (1200, -2600), (-2500, 3900), (-300, -3200), (4500, 5200),
+                   (2000, -4500), (5200, 800), (1500, 5300), (-3000, 3000), (-3800, -3000), (5200, -3500)]
 
 # Rendu : ciel, soleil, etalonnage
 RENDU = {
@@ -104,6 +107,11 @@ def prefab(path, brushes, entites):
     ecrire(path, lignes)
 
 
+def box_planes(x0, y0, z0, x1, y1, z1):
+    from immeuble import bloc
+    return bloc(x0, y0, z0, x1, y1, z1, "trigger")
+
+
 def sonde(x, y, z, rayon=1024):
     return {"classname": "reflection_probe", "origin": f"{fmt(x)} {fmt(y)} {fmt(z)}", "radius": str(rayon),
             "ao_power": "2", "ao_range": "16", "ao_strength": "1", "blend_maxs": "3 3 3", "blend_mins": "3 3 3",
@@ -118,17 +126,33 @@ def main(tools=TOOLS):
     head, ents = parse((tpl / "map_source" / "zm" / "template.map").read_text(encoding="latin-1"))
 
     q = Quartier().construire()
-    X0, X1, Y0, Y1 = q.X0, q.X1, q.Y0, q.Y1
-    cx, cy = (X0 + X1) / 2, (Y0 + Y1) / 2
+    import monde
+    # zone jouable : cadre du quartier + bande autour du chemin jusqu'au Carrefour
+    sp = monde.SPINE
+    X0 = min(q.X0, min(p[0] for p in sp) - monde.WP)
+    X1 = max(q.X1, max(p[0] for p in sp) + monde.WP)
+    Y0 = min(q.Y0, min(p[1] for p in sp) - monde.WP)
+    Y1 = max(q.Y1, max(p[1] for p in sp) + monde.WP)
+    # monde visible (terrain jusqu'a l'horizon)
+    W0, V0, W1, V1 = monde.boite()
 
-    # prefabs : quartier (terrain, voirie, vegetation) + un par immeuble
+    # prefabs : un par groupe de brushes (decoupes en tranches de MAX_BRUSHES) + un par immeuble
     modeles = [e for e in q.entites if e["classname"] == "misc_model"]
-    prefab(PREFABS / "quartier.map", q.brushes, modeles)
+    noms_prefabs = []
+    for groupe, liste in q.groupes.items():
+        for i in range(0, len(liste), MAX_BRUSHES):
+            nom = groupe if len(liste) <= MAX_BRUSHES else f"{groupe}_{i // MAX_BRUSHES + 1}"
+            prefab(PREFABS / f"{nom}.map", liste[i:i + MAX_BRUSHES], [])
+            noms_prefabs.append(nom)
+    prefab(PREFABS / "decor.map", [], modeles)
+    noms_prefabs.append("decor")
     for imm in q.immeubles:
         prefab(PREFABS / f"{imm.nom}.map", imm.brushes, imm.entites)
-    ancien = PREFABS / "site_blockout.map"
-    if ancien.exists():
-        ancien.unlink()
+        noms_prefabs.append(imm.nom)
+    # prefabs d'anciennes versions : on les supprime du depot (ils ne sont plus references)
+    for ancien in PREFABS.glob("*.map"):
+        if ancien.stem not in noms_prefabs:
+            ancien.unlink()
 
     def place(origin):
         x, y, z = (float(v) for v in origin.split())
@@ -141,21 +165,22 @@ def main(tools=TOOLS):
         return any(e[0] - marge < x < e[2] + marge and e[1] - marge < y < e[3] + marge for e in q.emprises)
 
     # volumes du modele, redimensionnes au quartier
-    C = 10400
     volumes = {
         "info_volume": ("volume", (X0, Y0, -256, X1, Y1, 1600)),
-        "volume_sun": ("sun_volume", (cx - C, cy - C, -960, cx + C, cy + C, 4500)),
+        "volume_sun": ("sun_volume", (W0, V0, -960, W1, V1, 6500)),
         "umbra_volume": ("umbra_volume", (X0 - 512, Y0 - 512, -512, X1 + 512, Y1 + 512, 2200)),
         "volume_fpstool": ("volume_fpstool", (X0, Y0, -256, X1, Y1, 1600)),
     }
     t = 64
+    HC = 6600   # plafond du ciel : au-dessus du plus haut relief
+    W0, V0, W1, V1 = W0 - 200, V0 - 200, W1 + 200, V1 + 200
     ciel = [
-        ("sky", box(cx - C - t, cy - C - t, -1024 - t, cx + C + t, cy + C + t, -1024)),
-        ("sky", box(cx - C - t, cy - C - t, 4608, cx + C + t, cy + C + t, 4608 + t)),
-        ("sky", box(cx - C - t, cy - C - t, -1024, cx - C, cy + C + t, 4608)),
-        ("sky", box(cx + C, cy - C - t, -1024, cx + C + t, cy + C + t, 4608)),
-        ("sky", box(cx - C, cy - C - t, -1024, cx + C, cy - C, 4608)),
-        ("sky", box(cx - C, cy + C, -1024, cx + C, cy + C + t, 4608)),
+        ("sky", box(W0 - t, V0 - t, -1024 - t, W1 + t, V1 + t, -1024)),
+        ("sky", box(W0 - t, V0 - t, HC, W1 + t, V1 + t, HC + t)),
+        ("sky", box(W0 - t, V0 - t, -1024, W0, V1 + t, HC)),
+        ("sky", box(W1, V0 - t, -1024, W1 + t, V1 + t, HC)),
+        ("sky", box(W0, V0 - t, -1024, W1, V0, HC)),
+        ("sky", box(W0, V1, -1024, W1, V1 + t, HC)),
     ]
 
     reset_guids(f"{MAP}.map")
@@ -206,6 +231,17 @@ def main(tools=TOOLS):
                            "angles": f"0 {fmt(math.degrees(math.atan2(-y, -x)) % 360)} 0",
                            "script_noteworthy": "riser_location", "script_string": "find_flesh",
                            "targetname": "start_zone_spawners", "_color": "1 0 0"})
+    # zone de test : armes au mur, atouts en plus, machine a points
+    for arme, x, y, z in q.test["armes"]:
+        supplement.append({"classname": "misc_prefab", "model": f"_prefabs/zm/zm_core/spawnable_weapon_{arme}.map",
+                           "origin": f"{fmt(x)} {fmt(y)} {fmt(z)}", "angles": "0 0 0"})
+    for nom, x, y, z in q.test["atouts"]:
+        supplement.append({"classname": "misc_prefab", "model": f"_prefabs/zm/zm_core/{nom}.map",
+                           "origin": f"{fmt(x)} {fmt(y)} {fmt(z)}", "angles": "0 90 0",
+                           "script_string": "zclassic_perks_start_room"})
+    mx, my, mz = q.test["argent"]
+    supplement.append({"classname": "trigger_use", "targetname": "bouton_argent", "cursorhint": "HINT_NOICON",
+                       "_brushes": [[(n, p, "trigger") for n, p, _ in box_planes(mx - 50, my - 10, mz, mx + 50, my + 80, mz + 110)]]})
     # ascenseur du batiment 1
     for imm in q.immeubles:
         supplement += imm.ascenseur_entites()
@@ -213,12 +249,16 @@ def main(tools=TOOLS):
     for imm in q.immeubles:
         for k in range(imm.halls):
             _, c0, c1, _ = imm.section(k)
-            supplement.append(sonde(*imm.monde((c0 + c1) / 2, 96, 64), rayon=400))
+            supplement.append(sonde(*imm.monde((c0 + c1) / 2, 0, 64), rayon=400))
         supplement.append(sonde(*imm.sonde, rayon=700))
     for x, y in ((600, 0), (-1200, 1500), (1000, 3200), (3000, 3800)):
         supplement.append(sonde(x, y, q.z(x, y) + 160, rayon=2400))
     # prefabs du quartier et des immeubles
-    for nom in ["quartier"] + [imm.nom for imm in q.immeubles]:
+    import os
+    sans = [x for x in os.environ.get("ZM_SANS", "").split(",") if x]
+    for nom in noms_prefabs:
+        if any(nom.startswith(x) for x in sans):
+            continue
         supplement.append({"classname": "misc_prefab", "model": f"_prefabs/{MAP}/{nom}.map",
                            "origin": "0 0 0", "angles": "0 0 0"})
     for e in supplement:

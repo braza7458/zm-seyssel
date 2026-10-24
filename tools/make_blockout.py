@@ -196,6 +196,19 @@ def new_guid():
     return f'{{{str(uuid.uuid5(uuid.NAMESPACE_URL, f"zm_seyssel/{_guids["graine"]}/{_guids["n"]}")).upper()}}}'
 
 
+def proj_texte(mat, n, proj=None):
+    """Projection de texture d'une face : 'L H dx dy rot 0' (echelle par materiau, voir materiaux.py)."""
+    if proj is None:
+        try:
+            from materiaux import projection
+            proj = projection(mat, n)
+        except ImportError:
+            proj = (256, 256, 0, 0, 0)
+    w, h = proj[0], proj[1]
+    dx, dy, rot = (list(proj) + [0, 0, 0])[2:5]
+    return f"{fmt(w)} {fmt(h)} {fmt(dx)} {fmt(dy)} {fmt(rot)} 0"
+
+
 def brush_lines(brushes, first=0):
     """Lignes .map des brushes ; chaque brush est (categorie de MAT ou nom de materiau, plans)."""
     lines = []
@@ -205,7 +218,7 @@ def brush_lines(brushes, first=0):
         for n, p in planes:
             p1, p2, p3 = plane_points(n, p)
             pts = " ".join("( " + " ".join(fmt(c) for c in q) + " )" for q in (p1, p2, p3))
-            lines.append(f" {pts} {mat} 256 256 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0")
+            lines.append(f" {pts} {mat} {proj_texte(mat, n)} lightmap_gray 16384 16384 0 0 0 0")
         lines.append("}")
     return lines
 
@@ -215,10 +228,11 @@ def brush_lines_mat(brushes, first=0):
     lines = []
     for i, planes in enumerate(brushes, first):
         lines += [f"// brush {i}", "{", f" guid \"{new_guid()}\""]
-        for n, p, mat in planes:
+        for pl in planes:
+            n, p, mat = pl[:3]
             p1, p2, p3 = plane_points(n, p)
             pts = " ".join("( " + " ".join(fmt(c) for c in q) + " )" for q in (p1, p2, p3))
-            lines.append(f" {pts} {mat} 256 256 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0")
+            lines.append(f" {pts} {mat} {proj_texte(mat, n, pl[3] if len(pl) > 3 else None)} lightmap_gray 16384 16384 0 0 0 0")
         lines.append("}")
     return lines
 

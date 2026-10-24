@@ -1,0 +1,16 @@
+iwmap 4
+// entity 0
+{
+guid "{6A5ED909-BB36-57E7-A515-8AEF2252475F}"
+"classname" "worldspawn"
+// brush 0
+{
+ guid "{B3543ACF-8A9C-509E-A460-326BD65D0F46}"
+ ( -19520 0 0 ) ( -19520 0 -256 ) ( -19520 256 0 ) t7_water_sector_flow 512 512 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32255 0 0 ) ( 32255 0 -256 ) ( 32255 -256 0 ) t7_water_sector_flow 512 512 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -21056 0 ) ( 0 -21056 -256 ) ( -256 -21056 0 ) t7_water_sector_flow 512 512 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 52626.4 0 ) ( 0 52626.4 -256 ) ( 256 52626.4 0 ) t7_water_sector_flow 512 512 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -95.648 ) ( -256 0 -95.648 ) ( 0 -256 -95.648 ) t7_water_sector_flow 512 512 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -87.648 ) ( -256 0 -87.648 ) ( 0 256 -87.648 ) t7_water_sector_flow 512 512 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

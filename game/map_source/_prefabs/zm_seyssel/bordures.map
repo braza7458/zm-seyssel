@@ -1,0 +1,1006 @@
+iwmap 4
+// entity 0
+{
+guid "{07E563B3-BA84-55AB-AE00-30821F811B6A}"
+"classname" "worldspawn"
+// brush 0
+{
+ guid "{4D0B07AD-515E-5D52-89C2-F67441140EC0}"
+ ( 512 0 0 ) ( 512 0 -256 ) ( 512 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 640 0 0 ) ( 640 0 -256 ) ( 640 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -19.5 ) ( -256 0 -19.5 ) ( 0 -256 -19.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 10.5 ) ( -256 0 10.5 ) ( 0 256 10.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ guid "{4DEE5505-C89E-5756-9AB7-A2692E65CB7D}"
+ ( 640 0 0 ) ( 640 0 -256 ) ( 640 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 768 0 0 ) ( 768 0 -256 ) ( 768 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -6.5 ) ( -256 0 -6.5 ) ( 0 -256 -6.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 23.5 ) ( -256 0 23.5 ) ( 0 256 23.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+ guid "{067A8078-4887-5BF7-8966-208B1628681B}"
+ ( 768 0 0 ) ( 768 0 -256 ) ( 768 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 896 0 0 ) ( 896 0 -256 ) ( 896 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -0.25 ) ( -256 0 -0.25 ) ( 0 -256 -0.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 29.75 ) ( -256 0 29.75 ) ( 0 256 29.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+ guid "{09809C2C-A756-5191-BD05-2584860D3DD7}"
+ ( 896 0 0 ) ( 896 0 -256 ) ( 896 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1024 0 0 ) ( 1024 0 -256 ) ( 1024 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -0.75 ) ( -256 0 -0.75 ) ( 0 -256 -0.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 29.25 ) ( -256 0 29.25 ) ( 0 256 29.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+ guid "{483DE434-A404-5471-883F-73B3E934748B}"
+ ( 1024 0 0 ) ( 1024 0 -256 ) ( 1024 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1152 0 0 ) ( 1152 0 -256 ) ( 1152 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 5.25 ) ( -256 0 5.25 ) ( 0 -256 5.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 35.25 ) ( -256 0 35.25 ) ( 0 256 35.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+ guid "{0F5A7AF0-E930-5F15-946F-C3A9B7CD5766}"
+ ( 1152 0 0 ) ( 1152 0 -256 ) ( 1152 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1280 0 0 ) ( 1280 0 -256 ) ( 1280 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 17.75 ) ( -256 0 17.75 ) ( 0 -256 17.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 47.75 ) ( -256 0 47.75 ) ( 0 256 47.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+ guid "{929EC4FB-6BC1-53F1-A5D1-39AE63064F49}"
+ ( 1280 0 0 ) ( 1280 0 -256 ) ( 1280 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1408 0 0 ) ( 1408 0 -256 ) ( 1408 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 32.5 ) ( -256 0 32.5 ) ( 0 -256 32.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 62.5 ) ( -256 0 62.5 ) ( 0 256 62.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 7
+{
+ guid "{E452FCD7-87F7-5A4C-8B1D-BC6D570091C1}"
+ ( 1408 0 0 ) ( 1408 0 -256 ) ( 1408 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1536 0 0 ) ( 1536 0 -256 ) ( 1536 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 49.5 ) ( -256 0 49.5 ) ( 0 -256 49.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 79.5 ) ( -256 0 79.5 ) ( 0 256 79.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 8
+{
+ guid "{810C19A1-2AF1-503E-B891-3B8C9F46069B}"
+ ( 1536 0 0 ) ( 1536 0 -256 ) ( 1536 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1664 0 0 ) ( 1664 0 -256 ) ( 1664 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 64.5 ) ( -256 0 64.5 ) ( 0 -256 64.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 94.5 ) ( -256 0 94.5 ) ( 0 256 94.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 9
+{
+ guid "{B60095E4-A505-5870-B21B-811442310354}"
+ ( 1664 0 0 ) ( 1664 0 -256 ) ( 1664 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1792 0 0 ) ( 1792 0 -256 ) ( 1792 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1030 0 ) ( 0 -1030 -256 ) ( -256 -1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1018 0 ) ( 0 -1018 -256 ) ( 256 -1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 77.5 ) ( -256 0 77.5 ) ( 0 -256 77.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 107.5 ) ( -256 0 107.5 ) ( 0 256 107.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 10
+{
+ guid "{EDBEF764-1372-5E58-B826-93BD41EBDC2C}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1024 0 ) ( 0 -1024 -256 ) ( -256 -1024 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -896 0 ) ( 0 -896 -256 ) ( 256 -896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 84.75 ) ( -256 0 84.75 ) ( 0 -256 84.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 114.75 ) ( -256 0 114.75 ) ( 0 256 114.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 11
+{
+ guid "{84C12582-6741-5D8A-899A-1C2C18839FFF}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -896 0 ) ( 0 -896 -256 ) ( -256 -896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -768 0 ) ( 0 -768 -256 ) ( 256 -768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 86.25 ) ( -256 0 86.25 ) ( 0 -256 86.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 116.25 ) ( -256 0 116.25 ) ( 0 256 116.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 12
+{
+ guid "{4ECEDF41-C364-5388-95A3-68019035F3BB}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -768 0 ) ( 0 -768 -256 ) ( -256 -768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( 256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 79.75 ) ( -256 0 79.75 ) ( 0 -256 79.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 109.75 ) ( -256 0 109.75 ) ( 0 256 109.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 13
+{
+ guid "{1F712388-7E96-5674-8D70-34889E3858E0}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( -256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( 256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 65.25 ) ( -256 0 65.25 ) ( 0 -256 65.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 95.25 ) ( -256 0 95.25 ) ( 0 256 95.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 14
+{
+ guid "{AFD9343D-5A5C-52EC-ABC9-1ED30F354C9A}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( -256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -384 0 ) ( 0 -384 -256 ) ( 256 -384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 51.75 ) ( -256 0 51.75 ) ( 0 -256 51.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 81.75 ) ( -256 0 81.75 ) ( 0 256 81.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 15
+{
+ guid "{787424EA-3086-51B4-A557-BA2E243F884F}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -384 0 ) ( 0 -384 -256 ) ( -256 -384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -256 0 ) ( 0 -256 -256 ) ( 256 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 39.25 ) ( -256 0 39.25 ) ( 0 -256 39.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 69.25 ) ( -256 0 69.25 ) ( 0 256 69.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 16
+{
+ guid "{F20DFBFC-BCDA-51E2-AB86-F472C4C77BF7}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 0 ) ( 0 0 -256 ) ( -256 0 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 128 0 ) ( 0 128 -256 ) ( 256 128 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 26.5 ) ( -256 0 26.5 ) ( 0 -256 26.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 56.5 ) ( -256 0 56.5 ) ( 0 256 56.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 17
+{
+ guid "{4BC297F9-1ED4-5678-9C5E-945887F54EEC}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 768 0 ) ( 0 768 -256 ) ( -256 768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 896 0 ) ( 0 896 -256 ) ( 256 896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 9.5 ) ( -256 0 9.5 ) ( 0 -256 9.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 39.5 ) ( -256 0 39.5 ) ( 0 256 39.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 18
+{
+ guid "{47AE03B5-6517-5804-9D31-1F368CB5D74E}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1152 0 ) ( 0 1152 -256 ) ( -256 1152 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1280 0 ) ( 0 1280 -256 ) ( 256 1280 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 11 ) ( -256 0 11 ) ( 0 -256 11 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 41 ) ( -256 0 41 ) ( 0 256 41 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 19
+{
+ guid "{69B246A5-8AFE-5378-8FAD-61344724F00F}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1280 0 ) ( 0 1280 -256 ) ( -256 1280 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1408 0 ) ( 0 1408 -256 ) ( 256 1408 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 13.75 ) ( -256 0 13.75 ) ( 0 -256 13.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 43.75 ) ( -256 0 43.75 ) ( 0 256 43.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 20
+{
+ guid "{2CA71DC5-F08A-57E4-91E2-07C40A142AD0}"
+ ( 512 0 0 ) ( 512 0 -256 ) ( 512 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 640 0 0 ) ( 640 0 -256 ) ( 640 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 6 ) ( -256 0 6 ) ( 0 -256 6 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 36 ) ( -256 0 36 ) ( 0 256 36 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 21
+{
+ guid "{0EBA0FFE-3F6C-5871-B011-86BC362A3251}"
+ ( 640 0 0 ) ( 640 0 -256 ) ( 640 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 768 0 0 ) ( 768 0 -256 ) ( 768 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 -256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 34 ) ( -256 0 34 ) ( 0 256 34 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 22
+{
+ guid "{3AB53731-9859-5AC8-8E43-2CA59B3BCC2B}"
+ ( 768 0 0 ) ( 768 0 -256 ) ( 768 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 896 0 0 ) ( 896 0 -256 ) ( 896 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 3.5 ) ( -256 0 3.5 ) ( 0 -256 3.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 33.5 ) ( -256 0 33.5 ) ( 0 256 33.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 23
+{
+ guid "{27195A20-F804-5998-9287-5D8100522A49}"
+ ( 896 0 0 ) ( 896 0 -256 ) ( 896 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1024 0 0 ) ( 1024 0 -256 ) ( 1024 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4.5 ) ( -256 0 4.5 ) ( 0 -256 4.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 34.5 ) ( -256 0 34.5 ) ( 0 256 34.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 24
+{
+ guid "{E3FCDF20-5728-5CFC-BB78-E9EDF9261042}"
+ ( 1024 0 0 ) ( 1024 0 -256 ) ( 1024 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1152 0 0 ) ( 1152 0 -256 ) ( 1152 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 5.75 ) ( -256 0 5.75 ) ( 0 -256 5.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 35.75 ) ( -256 0 35.75 ) ( 0 256 35.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 25
+{
+ guid "{193DF446-64B1-5295-87B4-91F8F5FBB363}"
+ ( 1152 0 0 ) ( 1152 0 -256 ) ( 1152 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1280 0 0 ) ( 1280 0 -256 ) ( 1280 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 7.25 ) ( -256 0 7.25 ) ( 0 -256 7.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 37.25 ) ( -256 0 37.25 ) ( 0 256 37.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 26
+{
+ guid "{39867090-A802-5591-8D3E-DD510E89BB2C}"
+ ( 1280 0 0 ) ( 1280 0 -256 ) ( 1280 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1408 0 0 ) ( 1408 0 -256 ) ( 1408 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 9 ) ( -256 0 9 ) ( 0 -256 9 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 39 ) ( -256 0 39 ) ( 0 256 39 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 27
+{
+ guid "{B0EC8F07-2249-5952-96B0-D9AEF9BC40E2}"
+ ( 1408 0 0 ) ( 1408 0 -256 ) ( 1408 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1536 0 0 ) ( 1536 0 -256 ) ( 1536 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 11 ) ( -256 0 11 ) ( 0 -256 11 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 41 ) ( -256 0 41 ) ( 0 256 41 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 28
+{
+ guid "{CD7B933B-0880-5E32-8DC7-0D4A47FB6EC5}"
+ ( 1536 0 0 ) ( 1536 0 -256 ) ( 1536 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1664 0 0 ) ( 1664 0 -256 ) ( 1664 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2042 0 ) ( 0 2042 -256 ) ( -256 2042 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2054 0 ) ( 0 2054 -256 ) ( 256 2054 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 13.5 ) ( -256 0 13.5 ) ( 0 -256 13.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 43.5 ) ( -256 0 43.5 ) ( 0 256 43.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 29
+{
+ guid "{668C045B-EB86-5C64-A54F-1B039C8E7934}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -1024 0 ) ( 0 -1024 -256 ) ( -256 -1024 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -896 0 ) ( 0 -896 -256 ) ( 256 -896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 30
+{
+ guid "{2F75074C-7D33-5287-BEF1-C9A409A9022F}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -896 0 ) ( 0 -896 -256 ) ( -256 -896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -768 0 ) ( 0 -768 -256 ) ( 256 -768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 31
+{
+ guid "{84CAF9E8-C0E2-50C8-83C8-6A1061EF1BA0}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -768 0 ) ( 0 -768 -256 ) ( -256 -768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( 256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 32
+{
+ guid "{5E18E78D-382E-5AE9-9E30-5C9F3E3E24EC}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( -256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( 256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 33
+{
+ guid "{38885CDC-9BA6-5160-BF21-0D47A4654B76}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( -256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -384 0 ) ( 0 -384 -256 ) ( 256 -384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 34
+{
+ guid "{7C0C044A-B6DB-5283-9012-F17B2E1D237F}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -384 0 ) ( 0 -384 -256 ) ( -256 -384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -256 0 ) ( 0 -256 -256 ) ( 256 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 35
+{
+ guid "{6C24621F-0637-583C-834C-4BCA3EDFB334}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -256 0 ) ( 0 -256 -256 ) ( -256 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -128 0 ) ( 0 -128 -256 ) ( 256 -128 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 36
+{
+ guid "{81B6396F-742E-5F6F-B457-5A0A52D9CC72}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -128 0 ) ( 0 -128 -256 ) ( -256 -128 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 0 ) ( 0 0 -256 ) ( 256 0 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 37
+{
+ guid "{93A5AF03-0636-505D-A8E6-83E7B1B1CF94}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 0 ) ( 0 0 -256 ) ( -256 0 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 128 0 ) ( 0 128 -256 ) ( 256 128 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 38
+{
+ guid "{5F011F3A-6AAD-5F0E-B685-2FE683237D1C}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 128 0 ) ( 0 128 -256 ) ( -256 128 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 256 0 ) ( 0 256 -256 ) ( 256 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 39
+{
+ guid "{73EF38AC-55AE-5E63-BD59-CB0484123534}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 256 0 ) ( 0 256 -256 ) ( -256 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 384 0 ) ( 0 384 -256 ) ( 256 384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 40
+{
+ guid "{FE89F702-36CD-5819-B831-7875C27BE816}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 384 0 ) ( 0 384 -256 ) ( -256 384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 512 0 ) ( 0 512 -256 ) ( 256 512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 41
+{
+ guid "{6201AA29-A359-56DD-BA8E-627553CDAEB7}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 512 0 ) ( 0 512 -256 ) ( -256 512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 640 0 ) ( 0 640 -256 ) ( 256 640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 42
+{
+ guid "{F0FF1F7D-180B-553C-BD97-0A05C27EE3A3}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 640 0 ) ( 0 640 -256 ) ( -256 640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 768 0 ) ( 0 768 -256 ) ( 256 768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 43
+{
+ guid "{FA52C1EF-6222-5298-82C9-5886FAF13478}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 768 0 ) ( 0 768 -256 ) ( -256 768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 896 0 ) ( 0 896 -256 ) ( 256 896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 44
+{
+ guid "{80ABB481-B397-599C-85FC-63B8E31176FB}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 896 0 ) ( 0 896 -256 ) ( -256 896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1024 0 ) ( 0 1024 -256 ) ( 256 1024 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 45
+{
+ guid "{CAAFB7D9-E241-508D-9B58-892202F3CAAD}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1024 0 ) ( 0 1024 -256 ) ( -256 1024 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1152 0 ) ( 0 1152 -256 ) ( 256 1152 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 46
+{
+ guid "{C2B8B741-8FD2-500E-98AF-EE981C437297}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1152 0 ) ( 0 1152 -256 ) ( -256 1152 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1280 0 ) ( 0 1280 -256 ) ( 256 1280 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 47
+{
+ guid "{BABCE58F-A1E0-5299-8685-D8C0AB07B6BC}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1280 0 ) ( 0 1280 -256 ) ( -256 1280 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1408 0 ) ( 0 1408 -256 ) ( 256 1408 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 48
+{
+ guid "{DF66CB91-A0F7-544E-B6A5-CE180E55E44C}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1408 0 ) ( 0 1408 -256 ) ( -256 1408 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1536 0 ) ( 0 1536 -256 ) ( 256 1536 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -26 ) ( -256 0 -26 ) ( 0 -256 -26 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 4 ) ( -256 0 4 ) ( 0 256 4 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 49
+{
+ guid "{DE0706CC-EB7D-5F94-B464-915D64F4509A}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1536 0 ) ( 0 1536 -256 ) ( -256 1536 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1664 0 ) ( 0 1664 -256 ) ( 256 1664 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -18.25 ) ( -256 0 -18.25 ) ( 0 -256 -18.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 11.75 ) ( -256 0 11.75 ) ( 0 256 11.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 50
+{
+ guid "{8398EB4E-5A4C-5101-98D0-6F0A1667BCE9}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1664 0 ) ( 0 1664 -256 ) ( -256 1664 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1792 0 ) ( 0 1792 -256 ) ( 256 1792 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 -2.75 ) ( -256 0 -2.75 ) ( 0 -256 -2.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 27.25 ) ( -256 0 27.25 ) ( 0 256 27.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 51
+{
+ guid "{BC3E3B09-8A78-5649-88B7-A0F74C42CD45}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1792 0 ) ( 0 1792 -256 ) ( -256 1792 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1920 0 ) ( 0 1920 -256 ) ( 256 1920 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 5.5 ) ( -256 0 5.5 ) ( 0 -256 5.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 35.5 ) ( -256 0 35.5 ) ( 0 256 35.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 52
+{
+ guid "{D2D3448D-8FC7-5568-BB8C-6548C0B71EEC}"
+ ( 506 0 0 ) ( 506 0 -256 ) ( 506 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 518 0 0 ) ( 518 0 -256 ) ( 518 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1920 0 ) ( 0 1920 -256 ) ( -256 1920 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 2048 0 ) ( 0 2048 -256 ) ( 256 2048 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 6.5 ) ( -256 0 6.5 ) ( 0 -256 6.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 36.5 ) ( -256 0 36.5 ) ( 0 256 36.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 53
+{
+ guid "{C1979762-D79E-5366-A322-B9CB432F6BEE}"
+ ( 1792 0 0 ) ( 1792 0 -256 ) ( 1792 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1920 0 0 ) ( 1920 0 -256 ) ( 1920 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -774 0 ) ( 0 -774 -256 ) ( -256 -774 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -762 0 ) ( 0 -762 -256 ) ( 256 -762 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 93.75 ) ( -256 0 93.75 ) ( 0 -256 93.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 123.75 ) ( -256 0 123.75 ) ( 0 256 123.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 54
+{
+ guid "{951DB6F8-B36D-5F2B-A088-EE7F6EA24763}"
+ ( 1920 0 0 ) ( 1920 0 -256 ) ( 1920 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2048 0 0 ) ( 2048 0 -256 ) ( 2048 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -774 0 ) ( 0 -774 -256 ) ( -256 -774 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -762 0 ) ( 0 -762 -256 ) ( 256 -762 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 107.25 ) ( -256 0 107.25 ) ( 0 -256 107.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 137.25 ) ( -256 0 137.25 ) ( 0 256 137.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 55
+{
+ guid "{0C9B0605-BEA1-50AF-95E6-83A4E12DE92C}"
+ ( 2048 0 0 ) ( 2048 0 -256 ) ( 2048 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2176 0 0 ) ( 2176 0 -256 ) ( 2176 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -774 0 ) ( 0 -774 -256 ) ( -256 -774 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -762 0 ) ( 0 -762 -256 ) ( 256 -762 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 112.5 ) ( -256 0 112.5 ) ( 0 -256 112.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 142.5 ) ( -256 0 142.5 ) ( 0 256 142.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 56
+{
+ guid "{89C84599-A8C8-5856-8E70-4A24FCC61007}"
+ ( 2176 0 0 ) ( 2176 0 -256 ) ( 2176 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2304 0 0 ) ( 2304 0 -256 ) ( 2304 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -774 0 ) ( 0 -774 -256 ) ( -256 -774 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -762 0 ) ( 0 -762 -256 ) ( 256 -762 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 109.5 ) ( -256 0 109.5 ) ( 0 -256 109.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 139.5 ) ( -256 0 139.5 ) ( 0 256 139.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 57
+{
+ guid "{95B2831A-A5DF-55F0-AAF1-DB07CE0CEC5B}"
+ ( 2304 0 0 ) ( 2304 0 -256 ) ( 2304 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2432 0 0 ) ( 2432 0 -256 ) ( 2432 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -774 0 ) ( 0 -774 -256 ) ( -256 -774 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -762 0 ) ( 0 -762 -256 ) ( 256 -762 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 106.75 ) ( -256 0 106.75 ) ( 0 -256 106.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 136.75 ) ( -256 0 136.75 ) ( 0 256 136.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 58
+{
+ guid "{32D518BD-089D-5D1E-953F-B15382B70EED}"
+ ( 2432 0 0 ) ( 2432 0 -256 ) ( 2432 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2560 0 0 ) ( 2560 0 -256 ) ( 2560 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -774 0 ) ( 0 -774 -256 ) ( -256 -774 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -762 0 ) ( 0 -762 -256 ) ( 256 -762 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 104.25 ) ( -256 0 104.25 ) ( 0 -256 104.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 134.25 ) ( -256 0 134.25 ) ( 0 256 134.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 59
+{
+ guid "{5AA52071-7C4F-573A-BD32-2981A3E0A64D}"
+ ( 2560 0 0 ) ( 2560 0 -256 ) ( 2560 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2688 0 0 ) ( 2688 0 -256 ) ( 2688 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -774 0 ) ( 0 -774 -256 ) ( -256 -774 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -762 0 ) ( 0 -762 -256 ) ( 256 -762 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 101.5 ) ( -256 0 101.5 ) ( 0 -256 101.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 131.5 ) ( -256 0 131.5 ) ( 0 256 131.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 60
+{
+ guid "{25B89700-80F1-5DA9-B2FF-2C2A2DA062AF}"
+ ( 3066 0 0 ) ( 3066 0 -256 ) ( 3066 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3078 0 0 ) ( 3078 0 -256 ) ( 3078 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -768 0 ) ( 0 -768 -256 ) ( -256 -768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( 256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 94.5 ) ( -256 0 94.5 ) ( 0 -256 94.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 124.5 ) ( -256 0 124.5 ) ( 0 256 124.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 61
+{
+ guid "{72FE95B6-CF07-5673-9346-35D98D23DF6D}"
+ ( 3066 0 0 ) ( 3066 0 -256 ) ( 3066 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3078 0 0 ) ( 3078 0 -256 ) ( 3078 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( -256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( 256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 97.5 ) ( -256 0 97.5 ) ( 0 -256 97.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 127.5 ) ( -256 0 127.5 ) ( 0 256 127.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 62
+{
+ guid "{B78FAD69-E67E-5D81-AC5C-3A2FD5281A4B}"
+ ( 3066 0 0 ) ( 3066 0 -256 ) ( 3066 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3078 0 0 ) ( 3078 0 -256 ) ( 3078 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( -256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -384 0 ) ( 0 -384 -256 ) ( 256 -384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 98.25 ) ( -256 0 98.25 ) ( 0 -256 98.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 128.25 ) ( -256 0 128.25 ) ( 0 256 128.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 63
+{
+ guid "{63575E48-2CFB-5F27-B580-C38539BCE469}"
+ ( 3066 0 0 ) ( 3066 0 -256 ) ( 3066 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3078 0 0 ) ( 3078 0 -256 ) ( 3078 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 896 0 ) ( 0 896 -256 ) ( -256 896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1024 0 ) ( 0 1024 -256 ) ( 256 1024 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 144 ) ( -256 0 144 ) ( 0 -256 144 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 174 ) ( -256 0 174 ) ( 0 256 174 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 64
+{
+ guid "{A6ED85D3-B442-58EA-942F-1990CA318A97}"
+ ( 1920 0 0 ) ( 1920 0 -256 ) ( 1920 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2048 0 0 ) ( 2048 0 -256 ) ( 2048 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1018 0 ) ( 0 1018 -256 ) ( -256 1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1030 0 ) ( 0 1030 -256 ) ( 256 1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 39.5 ) ( -256 0 39.5 ) ( 0 -256 39.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 69.5 ) ( -256 0 69.5 ) ( 0 256 69.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 65
+{
+ guid "{3D437B92-8DA8-5CDC-96A1-16A2EA485295}"
+ ( 2688 0 0 ) ( 2688 0 -256 ) ( 2688 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2816 0 0 ) ( 2816 0 -256 ) ( 2816 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1018 0 ) ( 0 1018 -256 ) ( -256 1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1030 0 ) ( 0 1030 -256 ) ( 256 1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 96.5 ) ( -256 0 96.5 ) ( 0 -256 96.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 126.5 ) ( -256 0 126.5 ) ( 0 256 126.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 66
+{
+ guid "{717EB316-4D8F-5C10-8B68-266B1985C846}"
+ ( 2816 0 0 ) ( 2816 0 -256 ) ( 2816 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2944 0 0 ) ( 2944 0 -256 ) ( 2944 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1018 0 ) ( 0 1018 -256 ) ( -256 1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1030 0 ) ( 0 1030 -256 ) ( 256 1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 113.25 ) ( -256 0 113.25 ) ( 0 -256 113.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 143.25 ) ( -256 0 143.25 ) ( 0 256 143.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 67
+{
+ guid "{0995D2A2-A4A2-54F6-B4F7-A1CF99B56B12}"
+ ( 2944 0 0 ) ( 2944 0 -256 ) ( 2944 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3072 0 0 ) ( 3072 0 -256 ) ( 3072 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1018 0 ) ( 0 1018 -256 ) ( -256 1018 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 1030 0 ) ( 0 1030 -256 ) ( 256 1030 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 135.75 ) ( -256 0 135.75 ) ( 0 -256 135.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 165.75 ) ( -256 0 165.75 ) ( 0 256 165.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 68
+{
+ guid "{4869B158-40ED-540A-BF35-9162FAA966AA}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -768 0 ) ( 0 -768 -256 ) ( -256 -768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( 256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 79.75 ) ( -256 0 79.75 ) ( 0 -256 79.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 109.75 ) ( -256 0 109.75 ) ( 0 256 109.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 69
+{
+ guid "{9E56821E-8A3C-50C3-AE67-7F14334CD307}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -640 0 ) ( 0 -640 -256 ) ( -256 -640 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( 256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 65.25 ) ( -256 0 65.25 ) ( 0 -256 65.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 95.25 ) ( -256 0 95.25 ) ( 0 256 95.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 70
+{
+ guid "{77D2EF8D-618B-5306-BA8D-D84168F6D211}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -512 0 ) ( 0 -512 -256 ) ( -256 -512 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -384 0 ) ( 0 -384 -256 ) ( 256 -384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 51.75 ) ( -256 0 51.75 ) ( 0 -256 51.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 81.75 ) ( -256 0 81.75 ) ( 0 256 81.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 71
+{
+ guid "{15E193A3-5877-5E26-A79E-86807A33B032}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -384 0 ) ( 0 -384 -256 ) ( -256 -384 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -256 0 ) ( 0 -256 -256 ) ( 256 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 39.25 ) ( -256 0 39.25 ) ( 0 -256 39.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 69.25 ) ( -256 0 69.25 ) ( 0 256 69.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 72
+{
+ guid "{2633AEAB-B56B-5A59-8870-74DA94C9DABF}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 0 ) ( 0 0 -256 ) ( -256 0 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 128 0 ) ( 0 128 -256 ) ( 256 128 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 26.5 ) ( -256 0 26.5 ) ( 0 -256 26.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 56.5 ) ( -256 0 56.5 ) ( 0 256 56.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 73
+{
+ guid "{201807F3-F702-5EFD-AD07-31F0158A65E8}"
+ ( 1786 0 0 ) ( 1786 0 -256 ) ( 1786 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1798 0 0 ) ( 1798 0 -256 ) ( 1798 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 768 0 ) ( 0 768 -256 ) ( -256 768 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 896 0 ) ( 0 896 -256 ) ( 256 896 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 9.5 ) ( -256 0 9.5 ) ( 0 -256 9.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 39.5 ) ( -256 0 39.5 ) ( 0 256 39.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 74
+{
+ guid "{CB02EFCA-EA47-50F3-B19C-B7B55E25C747}"
+ ( 0 0 0 ) ( 0 0 -256 ) ( 0 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 128 0 0 ) ( 128 0 -256 ) ( 128 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 30 ) ( -256 0 30 ) ( 0 -256 30 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 60 ) ( -256 0 60 ) ( 0 256 60 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 75
+{
+ guid "{94462521-9BFC-54D5-82A2-B9B706525545}"
+ ( 128 0 0 ) ( 128 0 -256 ) ( 128 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 0 0 ) ( 256 0 -256 ) ( 256 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 30 ) ( -256 0 30 ) ( 0 -256 30 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 60 ) ( -256 0 60 ) ( 0 256 60 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 76
+{
+ guid "{F2844BC5-FB2E-58CC-AD94-8DCDB27199DE}"
+ ( 256 0 0 ) ( 256 0 -256 ) ( 256 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 384 0 0 ) ( 384 0 -256 ) ( 384 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 30.5 ) ( -256 0 30.5 ) ( 0 -256 30.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 60.5 ) ( -256 0 60.5 ) ( 0 256 60.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 77
+{
+ guid "{6EB62ACA-6873-5E81-BFDF-EB498A9E4195}"
+ ( 640 0 0 ) ( 640 0 -256 ) ( 640 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 768 0 0 ) ( 768 0 -256 ) ( 768 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 38 ) ( -256 0 38 ) ( 0 -256 38 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 68 ) ( -256 0 68 ) ( 0 256 68 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 78
+{
+ guid "{E4E6A016-3042-59FF-BD20-EB0B9B7E2BC7}"
+ ( 768 0 0 ) ( 768 0 -256 ) ( 768 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 896 0 0 ) ( 896 0 -256 ) ( 896 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 44 ) ( -256 0 44 ) ( 0 -256 44 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 74 ) ( -256 0 74 ) ( 0 256 74 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 79
+{
+ guid "{1BCD84B8-EFBD-5EA6-9BA6-94E3787B7AA5}"
+ ( 896 0 0 ) ( 896 0 -256 ) ( 896 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1024 0 0 ) ( 1024 0 -256 ) ( 1024 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 52 ) ( -256 0 52 ) ( 0 -256 52 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 82 ) ( -256 0 82 ) ( 0 256 82 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 80
+{
+ guid "{BB2D0E8E-9A42-5E5D-940D-80BA183A5819}"
+ ( 1024 0 0 ) ( 1024 0 -256 ) ( 1024 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1152 0 0 ) ( 1152 0 -256 ) ( 1152 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 57.5 ) ( -256 0 57.5 ) ( 0 -256 57.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 87.5 ) ( -256 0 87.5 ) ( 0 256 87.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 81
+{
+ guid "{F54F70E6-0D13-507E-B44A-00D353CBCFBD}"
+ ( 1152 0 0 ) ( 1152 0 -256 ) ( 1152 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1280 0 0 ) ( 1280 0 -256 ) ( 1280 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 60.5 ) ( -256 0 60.5 ) ( 0 -256 60.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 90.5 ) ( -256 0 90.5 ) ( 0 256 90.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 82
+{
+ guid "{EAA0C049-37C3-5F5D-AD6B-3240DAC3F76A}"
+ ( 1280 0 0 ) ( 1280 0 -256 ) ( 1280 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1408 0 0 ) ( 1408 0 -256 ) ( 1408 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 59.25 ) ( -256 0 59.25 ) ( 0 -256 59.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 89.25 ) ( -256 0 89.25 ) ( 0 256 89.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 83
+{
+ guid "{34A134E6-B8AB-5A45-9FF5-9439C7289AEC}"
+ ( 1408 0 0 ) ( 1408 0 -256 ) ( 1408 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1536 0 0 ) ( 1536 0 -256 ) ( 1536 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3834 0 ) ( 0 3834 -256 ) ( -256 3834 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3846 0 ) ( 0 3846 -256 ) ( 256 3846 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 53.75 ) ( -256 0 53.75 ) ( 0 -256 53.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 83.75 ) ( -256 0 83.75 ) ( 0 256 83.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 84
+{
+ guid "{C4D0DF06-2F88-528F-BE0D-08BBB2D197FD}"
+ ( 1530 0 0 ) ( 1530 0 -256 ) ( 1530 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1542 0 0 ) ( 1542 0 -256 ) ( 1542 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3840 0 ) ( 0 3840 -256 ) ( -256 3840 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3968 0 ) ( 0 3968 -256 ) ( 256 3968 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 55 ) ( -256 0 55 ) ( 0 -256 55 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 85 ) ( -256 0 85 ) ( 0 256 85 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 85
+{
+ guid "{7B49A3AE-05D1-557D-9CC5-91963C49678D}"
+ ( 1530 0 0 ) ( 1530 0 -256 ) ( 1530 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1542 0 0 ) ( 1542 0 -256 ) ( 1542 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3968 0 ) ( 0 3968 -256 ) ( -256 3968 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4096 0 ) ( 0 4096 -256 ) ( 256 4096 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 63 ) ( -256 0 63 ) ( 0 -256 63 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 93 ) ( -256 0 93 ) ( 0 256 93 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 86
+{
+ guid "{D8ECBE1C-32FA-565C-8028-F2112098034C}"
+ ( 1530 0 0 ) ( 1530 0 -256 ) ( 1530 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1542 0 0 ) ( 1542 0 -256 ) ( 1542 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4096 0 ) ( 0 4096 -256 ) ( -256 4096 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4224 0 ) ( 0 4224 -256 ) ( 256 4224 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 69.5 ) ( -256 0 69.5 ) ( 0 -256 69.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 99.5 ) ( -256 0 99.5 ) ( 0 256 99.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 87
+{
+ guid "{27B7E687-F554-5414-925E-73C9FC34C2C1}"
+ ( 1530 0 0 ) ( 1530 0 -256 ) ( 1530 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1542 0 0 ) ( 1542 0 -256 ) ( 1542 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4224 0 ) ( 0 4224 -256 ) ( -256 4224 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4352 0 ) ( 0 4352 -256 ) ( 256 4352 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 74.5 ) ( -256 0 74.5 ) ( 0 -256 74.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 104.5 ) ( -256 0 104.5 ) ( 0 256 104.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 88
+{
+ guid "{EB9AFC15-F625-573F-A77C-A7473986B7AD}"
+ ( 1530 0 0 ) ( 1530 0 -256 ) ( 1530 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1542 0 0 ) ( 1542 0 -256 ) ( 1542 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4352 0 ) ( 0 4352 -256 ) ( -256 4352 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4480 0 ) ( 0 4480 -256 ) ( 256 4480 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 77.5 ) ( -256 0 77.5 ) ( 0 -256 77.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 107.5 ) ( -256 0 107.5 ) ( 0 256 107.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 89
+{
+ guid "{E0808963-F107-561D-AB81-AACB1896E2DD}"
+ ( 1530 0 0 ) ( 1530 0 -256 ) ( 1530 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1542 0 0 ) ( 1542 0 -256 ) ( 1542 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4480 0 ) ( 0 4480 -256 ) ( -256 4480 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4608 0 ) ( 0 4608 -256 ) ( 256 4608 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 78.5 ) ( -256 0 78.5 ) ( 0 -256 78.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 108.5 ) ( -256 0 108.5 ) ( 0 256 108.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 90
+{
+ guid "{50D181EF-1639-5585-9F3E-711BF86AD86B}"
+ ( 0 0 0 ) ( 0 0 -256 ) ( 0 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 128 0 0 ) ( 128 0 -256 ) ( 128 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4858 0 ) ( 0 4858 -256 ) ( -256 4858 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4870 0 ) ( 0 4870 -256 ) ( 256 4870 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 72.5 ) ( -256 0 72.5 ) ( 0 -256 72.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 102.5 ) ( -256 0 102.5 ) ( 0 256 102.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 91
+{
+ guid "{364A8AEF-0C1C-55D0-921D-CA24918EA994}"
+ ( 128 0 0 ) ( 128 0 -256 ) ( 128 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 0 0 ) ( 256 0 -256 ) ( 256 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4858 0 ) ( 0 4858 -256 ) ( -256 4858 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4870 0 ) ( 0 4870 -256 ) ( 256 4870 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 81.5 ) ( -256 0 81.5 ) ( 0 -256 81.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 111.5 ) ( -256 0 111.5 ) ( 0 256 111.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 92
+{
+ guid "{A00DDADF-56CE-5AF9-B0F1-CFDD85E8E439}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3840 0 ) ( 0 3840 -256 ) ( -256 3840 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3968 0 ) ( 0 3968 -256 ) ( 256 3968 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 31.5 ) ( -256 0 31.5 ) ( 0 -256 31.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 61.5 ) ( -256 0 61.5 ) ( 0 256 61.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 93
+{
+ guid "{A5A97BA6-383D-5178-A66E-79F131D0CAA8}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 3968 0 ) ( 0 3968 -256 ) ( -256 3968 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4096 0 ) ( 0 4096 -256 ) ( 256 4096 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 34.5 ) ( -256 0 34.5 ) ( 0 -256 34.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 64.5 ) ( -256 0 64.5 ) ( 0 256 64.5 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 94
+{
+ guid "{33B6F74F-6094-53C3-9095-F522F0B78D90}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4096 0 ) ( 0 4096 -256 ) ( -256 4096 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4224 0 ) ( 0 4224 -256 ) ( 256 4224 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 39.75 ) ( -256 0 39.75 ) ( 0 -256 39.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 69.75 ) ( -256 0 69.75 ) ( 0 256 69.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 95
+{
+ guid "{DDB5CB84-2377-5334-93FA-CDA4241F26E7}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4224 0 ) ( 0 4224 -256 ) ( -256 4224 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4352 0 ) ( 0 4352 -256 ) ( 256 4352 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 47.25 ) ( -256 0 47.25 ) ( 0 -256 47.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 77.25 ) ( -256 0 77.25 ) ( 0 256 77.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 96
+{
+ guid "{F41C3B52-D24E-5507-8051-9B02D41951E4}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4352 0 ) ( 0 4352 -256 ) ( -256 4352 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4480 0 ) ( 0 4480 -256 ) ( 256 4480 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 51.25 ) ( -256 0 51.25 ) ( 0 -256 51.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 81.25 ) ( -256 0 81.25 ) ( 0 256 81.25 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 97
+{
+ guid "{2C5A2283-86B4-56C5-AFC6-A3168305CAA6}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4480 0 ) ( 0 4480 -256 ) ( -256 4480 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4608 0 ) ( 0 4608 -256 ) ( 256 4608 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 51.75 ) ( -256 0 51.75 ) ( 0 -256 51.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 81.75 ) ( -256 0 81.75 ) ( 0 256 81.75 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 98
+{
+ guid "{985305A9-0277-5372-87CD-DF8A81E967C9}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4608 0 ) ( 0 4608 -256 ) ( -256 4608 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4736 0 ) ( 0 4736 -256 ) ( 256 4736 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 56 ) ( -256 0 56 ) ( 0 -256 56 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 86 ) ( -256 0 86 ) ( 0 256 86 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 99
+{
+ guid "{674487D1-5861-500C-8493-55716B93E60B}"
+ ( -6 0 0 ) ( -6 0 -256 ) ( -6 256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 0 0 ) ( 6 0 -256 ) ( 6 -256 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4736 0 ) ( 0 4736 -256 ) ( -256 4736 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4864 0 ) ( 0 4864 -256 ) ( 256 4864 0 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 64 ) ( -256 0 64 ) ( 0 -256 64 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 94 ) ( -256 0 94 ) ( 0 256 94 ) t7_street_concrete_curb_01a 80 20 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
